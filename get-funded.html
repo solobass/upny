@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get Funded — UPNY.vc</title>
+  <meta name="description" content="UPNY Ventures — Pre-Seed Investment + GTM Program for Deep-Tech NYS founders." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #111111;
+    }
+
+    /* ── Nav ── */
+    .nav {
+      width: 100%;
+      padding: 24px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #eeeeee;
+    }
+
+    .nav-logo img {
+      height: 32px;
+      width: auto;
+      display: block;
+    }
+
+    .nav-back {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #888888;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-back:hover { color: #111111; }
+
+    /* ── Header ── */
+    .page-header {
+      padding: 80px 40px 64px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .page-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #999999;
+      margin-bottom: 20px;
+    }
+
+    .page-title {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 24px;
+    }
+
+    .page-intro {
+      font-size: clamp(0.95rem, 2vw, 1.1rem);
+      font-weight: 300;
+      line-height: 1.85;
+      color: #444444;
+      max-width: 640px;
+    }
+
+    /* ── Section shared ── */
+    .section {
+      padding: 80px 40px;
+      border-top: 1px solid #eeeeee;
+    }
+
+    .section-bg {
+      background: #f0efed;
+    }
+
+    .inner {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #999999;
+      margin-bottom: 48px;
+    }
+
+    .highlight {
+      font-weight: 500;
+      color: #111111;
+    }
+
+    /* ── Phases ── */
+    .phases {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .phase {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 48px;
+      padding: 48px 0;
+      border-top: 1px solid #eeeeee;
+    }
+
+    .phase:last-child { border-bottom: 1px solid #eeeeee; }
+
+    .phase-meta {}
+
+    .phase-tag {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #bbbbbb;
+      margin-bottom: 10px;
+    }
+
+    .phase-name {
+      font-size: 1.15rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+    }
+
+    .phase-duration {
+      font-size: 0.75rem;
+      color: #aaaaaa;
+    }
+
+    .phase-target {
+      font-size: 0.75rem;
+      color: #aaaaaa;
+      margin-top: 2px;
+    }
+
+    .phase-body {
+      font-size: 0.9rem;
+      font-weight: 300;
+      line-height: 1.85;
+      color: #555555;
+    }
+
+    /* ── Criteria ── */
+    .criteria {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .criterion {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 32px;
+      padding: 32px 0;
+      border-top: 1px solid #eeeeee;
+      align-items: start;
+    }
+
+    .criterion:last-child { border-bottom: 1px solid #eeeeee; }
+
+    .criterion-number {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #cccccc;
+      padding-top: 3px;
+    }
+
+    .criterion-title {
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      margin-bottom: 8px;
+    }
+
+    .criterion-body {
+      font-size: 0.875rem;
+      font-weight: 300;
+      line-height: 1.7;
+      color: #666666;
+    }
+
+    /* ── Apply CTA ── */
+    .apply-section {
+      padding: 100px 40px;
+      text-align: center;
+    }
+
+    .apply-title {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      margin-bottom: 20px;
+    }
+
+    .apply-sub {
+      font-size: 0.95rem;
+      font-weight: 300;
+      color: #666666;
+      margin-bottom: 48px;
+      line-height: 1.7;
+    }
+
+    .apply-btn {
+      display: inline-block;
+      background: #111111;
+      color: #ffffff;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 16px 40px;
+      border-radius: 4px;
+      transition: opacity 0.2s;
+    }
+
+    .apply-btn:hover { opacity: 0.75; }
+
+    .apply-btn--disabled {
+      background: #cccccc;
+      color: #ffffff;
+      cursor: default;
+      pointer-events: none;
+    }
+
+    .apply-btn--disabled:hover { opacity: 1; }
+
+    /* ── Footer ── */
+    .footer {
+      padding: 40px;
+      border-top: 1px solid #eeeeee;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-copy {
+      font-size: 0.7rem;
+      color: #aaaaaa;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .footer-back {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #888888;
+      text-decoration: none;
+    }
+
+    .footer-back:hover { color: #111111; }
+
+    /* ── Responsive ── */
+    @media (max-width: 640px) {
+      .nav { padding: 20px 24px; }
+      .page-header { padding: 48px 24px 40px; }
+      .section { padding: 56px 24px; }
+      .phase { grid-template-columns: 1fr; gap: 16px; }
+      .apply-section { padding: 64px 24px; }
+      .footer { padding: 32px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav class="nav">
+    <div class="nav-logo">
+      <a href="index.html">
+        <img src="assets/UPNY_Albany_banner.png" alt="UPNY.vc" />
+      </a>
+    </div>
+    <a href="index.html" class="nav-back">← Back to UPNY.vc</a>
+  </nav>
+
+  <!-- ── PAGE HEADER ── -->
+  <div class="page-header">
+    <p class="page-label">Get Funded</p>
+    <h1 class="page-title">From incubated<br />to Seed-ready.</h1>
+    <p class="page-intro">
+      UPNY Ventures backs Deep-Tech NYS founders at the earliest stage — before customers, before revenue — with <span class="highlight">Pre-Seed Investment</span> and a structured <span class="highlight">GTM Program</span> designed to get them there.
+    </p>
+  </div>
+
+  <!-- ── GTM PROGRAM ── -->
+  <section class="section">
+    <div class="inner">
+      <p class="section-label">GTM Program</p>
+      <div class="phases">
+
+        <div class="phase">
+          <div class="phase-meta">
+            <div class="phase-tag">Phase 1</div>
+            <div class="phase-name">Strategy</div>
+            <div class="phase-duration">6 Week Bootcamp</div>
+            <div class="phase-target">100+ Startups</div>
+          </div>
+          <div class="phase-body">
+            Every engagement starts with structure. Founders work through a focused GTM planning process — identifying their ideal customer profile, mapping priority verticals, sharpening their value proposition, and building the workflows they'll use to execute. The goal at the end of Phase 1: a clear, actionable plan and the commitment to work it.
+            <br /><br />
+            Participation is selective. Founders are scored on completion and quality. Not everyone advances.
+          </div>
+        </div>
+
+        <div class="phase">
+          <div class="phase-meta">
+            <div class="phase-tag">Phase 2</div>
+            <div class="phase-name">Activate</div>
+            <div class="phase-duration">12 Week Commercialization Engine</div>
+            <div class="phase-target">Top 25+ Startups</div>
+          </div>
+          <div class="phase-body">
+            <strong>The Commercialization Engine</strong> puts the plan into action. Weekly execution sprints — virtual and in-person — drive founders through expanding customer discovery, building outreach at scale, and testing their value proposition against real buyers.
+            <br /><br />
+            The goal by the end of Phase 2: early validation outcomes — a letter of intent, a signed pilot, a paying early adopter. Proof that the market is responding. Founders are scored throughout.
+          </div>
+        </div>
+
+        <div class="phase">
+          <div class="phase-meta">
+            <div class="phase-tag">Phase 3</div>
+            <div class="phase-name">Pre-Seed Investment</div>
+            <div class="phase-duration">Top Scoring Startups</div>
+          </div>
+          <div class="phase-body">
+            The top performers from Phase 1 and Phase 2 qualify for pre-seed funding consideration. Selection is based on scores and demonstrated traction.
+            <br /><br />
+            This is the bridge — from incubated startup to funded, growth-stage company, with the customers, pilots, and proof points to raise a Seed round.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FUNDING CRITERIA ── -->
+  <section class="section section-bg">
+    <div class="inner">
+      <p class="section-label">How We Evaluate</p>
+      <div class="criteria">
+
+        <div class="criterion">
+          <div class="criterion-number">01</div>
+          <div>
+            <div class="criterion-title">Team</div>
+            <div class="criterion-body">Grit is criterion one. Deep-tech commercialization is a long, non-linear road. We back founders who keep going when the science doesn't cooperate and the market doesn't respond on schedule. We can teach go-to-market. We cannot teach resilience.</div>
+          </div>
+        </div>
+
+        <div class="criterion">
+          <div class="criterion-number">02</div>
+          <div>
+            <div class="criterion-title">Problem</div>
+            <div class="criterion-body">Large, real, and durable. We back solutions to problems that don't go away — the kind that, if solved, fundamentally change the economics or capabilities of an industry.</div>
+          </div>
+        </div>
+
+        <div class="criterion">
+          <div class="criterion-number">03</div>
+          <div>
+            <div class="criterion-title">Technology</div>
+            <div class="criterion-body">Incubated or accelerated, and defensible. Genuine technical differentiation — the kind that takes years to replicate and creates lasting competitive advantage.</div>
+          </div>
+        </div>
+
+        <div class="criterion">
+          <div class="criterion-number">04</div>
+          <div>
+            <div class="criterion-title">Early Signal</div>
+            <div class="criterion-body">A customer conversation. A pilot interest. A signed LOI. We invest before revenue, but not before evidence. Some indication that the market is listening.</div>
+          </div>
+        </div>
+
+        <div class="criterion">
+          <div class="criterion-number">05</div>
+          <div>
+            <div class="criterion-title">Stage</div>
+            <div class="criterion-body">Pre-seed. Post-incubation or acceleration. Before Seed. This is exactly where we invest — and where almost no one else in New York State is focused.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── APPLY CTA ── -->
+  <section class="apply-section">
+    <h2 class="apply-title">Applications open August 2026.</h2>
+    <p class="apply-sub">We review every submission and respond to every qualified founder.<br />Check back in August to apply.</p>
+    <span class="apply-btn apply-btn--disabled">Application Date: TBA</span>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <span class="footer-copy">© 2026 UPNY Ventures · New York</span>
+    <a href="index.html" class="footer-back">← Back to UPNY.vc</a>
+  </footer>
+
+</body>
+</html>
