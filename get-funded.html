@@ -95,7 +95,7 @@
     }
 
     .section-label {
-      font-size: 0.7rem;
+      font-size: 0.9rem;
       font-weight: 600;
       letter-spacing: 0.14em;
       text-transform: uppercase;
@@ -204,14 +204,26 @@
 
     /* ── Apply CTA ── */
     .apply-section {
-      padding: 100px 40px;
+      padding: 48px 40px;
+      background: #f7f6f4;
       text-align: center;
+      border-top: 1px solid #dddddd;
+    }
+
+    .apply-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 64px 48px;
+      max-width: 700px;
+      margin: 0 auto;
     }
 
     .apply-title {
-      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-size: 0.9rem;
       font-weight: 600;
-      letter-spacing: -0.03em;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #cc9966;
       margin-bottom: 20px;
     }
 
@@ -423,11 +435,13 @@
 
   <!-- ── APPLY CTA ── -->
   <section class="apply-section">
-    <h2 class="apply-title">Application Details Coming Soon</h2>
-    <p class="apply-sub">We review every submission and respond to every qualified founder.<br /><br />
-      Follow <a href="https://www.linkedin.com/company/upny" target="_blank" class="apply-li-link">UPNY</a> for Announcements.
-    </p>
-    <span class="apply-btn apply-btn--disabled">Application Date: TBA</span>
+    <div class="apply-card">
+      <h2 class="apply-title">Application Details Coming Soon</h2>
+      <p class="apply-sub">We review every submission and respond to every qualified founder.<br /><br />
+        Follow <a href="https://www.linkedin.com/company/upny" target="_blank" class="apply-li-link">UPNY</a> for Announcements.
+      </p>
+      <span class="apply-btn apply-btn--disabled">Application Date: TBA</span>
+    </div>
   </section>
 
   <!-- ── FOOTER ── -->
