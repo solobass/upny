@@ -35,7 +35,7 @@
       font-weight: 600;
       letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: #999999;
+      color: #cc9966;
       margin-bottom: 48px;
     }
 
@@ -148,21 +148,22 @@
       width: 11px;
       height: 11px;
       border-radius: 50%;
-      background: #bbbbbb;
+      background: #cc9966;
       flex-shrink: 0;
       margin-top: 3px;
     }
 
     .journey-dot--upny {
       background: #111111;
-      width: 13px;
-      height: 13px;
+      width: 14px;
+      height: 14px;
+      box-shadow: 0 0 0 3px #cc9966;
     }
 
     .journey-dot--sub {
       width: 7px;
       height: 7px;
-      background: #cccccc;
+      background: #cc9966;
       margin-top: 5px;
     }
 
@@ -322,6 +323,16 @@
       font-weight: 300;
       line-height: 1.7;
       color: #666666;
+    }
+
+    .invest-who {
+      display: block;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #cc9966;
+      line-height: 1.6;
+      letter-spacing: -0.01em;
+      margin-bottom: 16px;
     }
 
     /* ── GTM Program ── */
@@ -497,7 +508,7 @@
       font-weight: 500;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: #888888;
+      color: #cc9966;
     }
 
     .contact-li-link {
@@ -505,7 +516,7 @@
       align-items: center;
       gap: 8px;
       text-decoration: none;
-      color: #888888;
+      color: #cc9966;
       font-size: 0.75rem;
       font-weight: 400;
       letter-spacing: 0.08em;
@@ -517,7 +528,7 @@
 
     .contact-footer {
       font-size: 0.65rem;
-      color: #444444;
+      color: #666666;
       letter-spacing: 0.1em;
       text-transform: uppercase;
     }
@@ -660,7 +671,7 @@
 
   <!-- ── INVEST ── -->
   <section id="invest" class="section section-bg">
-    <div class="inner">
+    <div class="inner" style="max-width: 1100px;">
       <p class="section-label">Invest</p>
       <div class="invest-header">
         <h2 class="invest-title">$5M Fund</h2>
@@ -669,17 +680,28 @@
         <div class="invest-col">
           <div class="invest-col-number">01</div>
           <div class="invest-col-title">Angel</div>
-          <div class="invest-col-body">Individual investors seeking early-stage access to incubated and accelerated deep-tech startups. We target investments of $10K–$50K alongside experienced operators and advisors who contribute mentorship, guidance, and strategic support within portfolio companies. Our goal is to strengthen the entrepreneurial ecosystem through active participation and founder development.</div>
+          <div class="invest-col-body">
+            <span class="invest-who">Individual investors seeking early-stage access to incubated and accelerated deep-tech startups.</span>
+            We target investments of $10K–$50K alongside experienced operators and advisors who contribute mentorship, guidance, and strategic support within portfolio companies.
+            <br /><br />
+            Our goal is to strengthen the entrepreneurial ecosystem through active participation and founder development.
+          </div>
         </div>
         <div class="invest-col">
           <div class="invest-col-number">02</div>
           <div class="invest-col-title">Institutional</div>
-          <div class="invest-col-body">Family offices and institutional LPs seeking exposure to a structured pre-seed investment vehicle backed by operational support and commercialization strategy. Our approach is to establish validation through a growing network of angels, founders, and statewide partnerships that create the foundation for long-term institutional participation and scalable fund growth.</div>
+          <div class="invest-col-body">
+            <span class="invest-who">Family offices and institutional LPs seeking exposure to a structured pre-seed investment vehicle backed by operational support and commercialization strategy.</span>
+            Our approach is to establish validation through a growing network of angels, founders, and statewide partnerships that create the foundation for long-term institutional participation and scalable fund growth.
+          </div>
         </div>
         <div class="invest-col">
           <div class="invest-col-number">03</div>
           <div class="invest-col-title">Partnerships</div>
-          <div class="invest-col-body">New York State programs and economic development organizations focused on deep-tech commercialization, regional growth, and translating publicly funded research into market-ready companies. We seek aligned partnerships that support entrepreneurship, accelerate innovation, and strengthen the long-term startup infrastructure across Upstate New York.</div>
+          <div class="invest-col-body">
+            <span class="invest-who">New York State programs and economic development organizations focused on deep-tech commercialization, regional growth, and translating publicly funded research into market-ready companies.</span>
+            We seek aligned partnerships that support entrepreneurship, accelerate innovation, and strengthen the long-term startup infrastructure across Upstate New York.
+          </div>
         </div>
       </div>
     </div>

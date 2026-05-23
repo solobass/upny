@@ -48,8 +48,8 @@
 
     /* ── Header ── */
     .page-header {
-      padding: 80px 40px 64px;
-      max-width: 860px;
+      padding: 40px 40px 32px;
+      max-width: 1100px;
       margin: 0 auto;
     }
 
@@ -58,7 +58,7 @@
       font-weight: 600;
       letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: #999999;
+      color: #cc9966;
       margin-bottom: 20px;
     }
 
@@ -75,7 +75,7 @@
       font-weight: 300;
       line-height: 1.85;
       color: #444444;
-      max-width: 640px;
+      max-width: 860px;
     }
 
     /* ── Section shared ── */
@@ -89,7 +89,7 @@
     }
 
     .inner {
-      max-width: 860px;
+      max-width: 1100px;
       margin: 0 auto;
     }
 
@@ -98,7 +98,7 @@
       font-weight: 600;
       letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: #999999;
+      color: #cc9966;
       margin-bottom: 48px;
     }
 
@@ -121,7 +121,8 @@
       border-top: 1px solid #eeeeee;
     }
 
-    .phase:last-child { border-bottom: 1px solid #eeeeee; }
+    .phase:first-child { border-top: none; }
+    .phase:last-child { border-bottom: none; }
 
     .phase-meta {}
 
@@ -130,7 +131,7 @@
       font-weight: 600;
       letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: #bbbbbb;
+      color: #cc9966;
       margin-bottom: 10px;
     }
 
@@ -182,7 +183,7 @@
       font-weight: 600;
       letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: #cccccc;
+      color: #cc9966;
       padding-top: 3px;
     }
 
@@ -236,6 +237,17 @@
     }
 
     .apply-btn:hover { opacity: 0.75; }
+
+    a.apply-li-link,
+    a.apply-li-link:visited {
+      color: #cc9966 !important;
+      font-weight: 500;
+      text-decoration: none;
+      border-bottom: 1px solid #cc9966;
+      transition: opacity 0.2s;
+    }
+
+    a.apply-li-link:hover { opacity: 0.65; }
 
     .apply-btn--disabled {
       background: #cccccc;
@@ -384,7 +396,7 @@
           <div class="criterion-number">03</div>
           <div>
             <div class="criterion-title">Technology</div>
-            <div class="criterion-body">Incubated or accelerated, and defensible. Genuine technical differentiation — the kind that takes years to replicate and creates lasting competitive advantage.</div>
+            <div class="criterion-body">Incubated or accelerated, and defensible. Genuine technical differentiation that creates lasting competitive advantage.</div>
           </div>
         </div>
 
@@ -400,7 +412,7 @@
           <div class="criterion-number">05</div>
           <div>
             <div class="criterion-title">Stage</div>
-            <div class="criterion-body">Pre-seed. Post-incubation or acceleration. Before Seed. This is exactly where we invest — and where almost no one else in New York State is focused.</div>
+            <div class="criterion-body">Pre-seed. Post-lab and incubation. We invest in disruptive products not services — and in NY founders.</div>
           </div>
         </div>
 
@@ -410,8 +422,10 @@
 
   <!-- ── APPLY CTA ── -->
   <section class="apply-section">
-    <h2 class="apply-title">Applications open August 2026.</h2>
-    <p class="apply-sub">We review every submission and respond to every qualified founder.<br />Check back in August to apply.</p>
+    <h2 class="apply-title">Application Details Coming Soon</h2>
+    <p class="apply-sub">We review every submission and respond to every qualified founder.<br /><br />
+      Follow <a href="https://www.linkedin.com/company/upny" target="_blank" class="apply-li-link">UPNY</a> for Announcements.
+    </p>
     <span class="apply-btn apply-btn--disabled">Application Date: TBA</span>
   </section>
 
