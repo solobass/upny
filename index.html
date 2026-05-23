@@ -56,7 +56,7 @@
     .section-divider {
       width: 100%;
       height: 1px;
-      background: #eeeeee;
+      background: #ddd0bb;
       position: relative;
       z-index: 1;
     }
@@ -184,7 +184,7 @@
     .journey-line {
       width: 1px;
       min-height: 28px;
-      background: #dddddd;
+      background: #ddd0bb;
       margin-left: 5px;
     }
 
@@ -373,11 +373,11 @@
       grid-template-columns: 200px 1fr;
       gap: 48px;
       padding: 48px 0;
-      border-top: 1px solid #eeeeee;
+      border-top: 1px solid #ddd0bb;
     }
 
     .gtm-phase:last-child {
-      border-bottom: 1px solid #eeeeee;
+      border-bottom: 1px solid #ddd0bb;
     }
 
     .phase-label {
@@ -411,7 +411,19 @@
 
     /* ── About ── */
     #about {
-      background: #fafafa;
+      background: #f3f2f0;
+    }
+
+    .about-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 40px 40px;
+    }
+
+    .about-divider {
+      height: 1px;
+      background: #ddd0bb;
+      margin: 12px 0;
     }
 
     .about-grid {
@@ -603,6 +615,10 @@
       }
 
       /* About */
+      .about-card {
+        padding: 28px 24px;
+      }
+
       .about-grid {
         grid-template-columns: 1fr;
       }
@@ -782,11 +798,12 @@
   <div class="section-divider"></div>
 
   <!-- ── ABOUT ── -->
-  <section id="about" class="section" style="padding: 100px 24px 64px 24px; background: #ffffff;">
-    <div class="section-card" style="max-width: 860px; margin: 0 auto; padding: 48px 32px 0 32px; border-radius: 12px 12px 0 0;">
+  <section id="about" class="section section-bg" style="padding: 100px 24px;">
+    <div style="max-width: 860px; margin: 0 auto;">
       <p class="section-label">About</p>
 
-      <div class="about-company" style="margin-bottom: 56px;">
+      <!-- Card 1: UPNY Ventures -->
+      <div class="about-card">
         <div class="about-name">UPNY Ventures</div>
         <div class="about-title">Albany, NY</div>
         <p class="about-bio">
@@ -794,28 +811,34 @@
         </p>
       </div>
 
-      <div class="about-grid">
-        <div>
-          <div class="about-photo">
-            <img src="assets/Allanvonschenkel_headshot.png" alt="Allan Von Schenkel" />
+      <!-- Divider -->
+      <div class="about-divider"></div>
+
+      <!-- Card 2: Allan Von Schenkel -->
+      <div class="about-card">
+        <div class="about-grid">
+          <div>
+            <div class="about-photo">
+              <img src="assets/Allanvonschenkel_headshot.png" alt="Allan Von Schenkel" />
+            </div>
+            <div style="display: flex; justify-content: center; margin-top: 12px;">
+              <a href="https://www.linkedin.com/in/allanvonschenkel/" target="_blank" class="linkedin-link" aria-label="Allan Von Schenkel on LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+              </a>
+            </div>
           </div>
-          <div style="display: flex; justify-content: center; margin-top: 12px;">
-            <a href="https://www.linkedin.com/in/allanvonschenkel/" target="_blank" class="linkedin-link" aria-label="Allan Von Schenkel on LinkedIn">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#0077B5">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-              </svg>
-            </a>
+          <div>
+            <div class="about-name">Allan Von Schenkel</div>
+            <div class="about-title">Founding Partner</div>
+            <p class="about-bio">
+              Allan is a five-time founder with experience spanning software, e-commerce, hospitality, retail, and nonprofit organizations. Beginning his career as a Federal Program Manager, he later transitioned into the startup ecosystem where he spent the last twenty years helping build and scale early-stage companies. His experience spans the full startup lifecycle — from pre-seed and seed-stage formation through venture-backed growth and Series A+ expansion — working across strategy, commercialization, operations, and go-to-market execution.
+            </p>
           </div>
         </div>
-        <div>
-          <div class="about-name">Allan Von Schenkel</div>
-          <div class="about-title">Founding Partner</div>
-          <p class="about-bio">
-            Allan is a five-time founder with experience spanning software, e-commerce, hospitality, retail, and nonprofit organizations. Beginning his career as a Federal Program Manager, he later transitioned into the startup ecosystem where he spent the last twenty years helping build and scale early-stage companies. His experience spans the full startup lifecycle — from pre-seed and seed-stage formation through venture-backed growth and Series A+ expansion — working across strategy, commercialization, operations, and go-to-market execution.
-          </p>
-        </div>
-      </div>
-    </div>
+      </div><!-- end card 2 -->
+    </div><!-- end inner -->
   </section>
 
   <!-- ── CONTACT ── -->
