@@ -548,26 +548,84 @@
     }
 
     /* ── Responsive ── */
+    @media (max-width: 860px) {
+      .section-split {
+        flex-direction: column;
+      }
+      .section-image {
+        width: 100%;
+        height: 280px;
+      }
+    }
+
     @media (max-width: 640px) {
+      /* Shared */
+      .section {
+        padding: 56px 20px;
+      }
+
+      .section-card {
+        padding: 32px 24px;
+      }
+
+      /* Landing */
+      #landing {
+        padding: 40px 20px;
+        min-height: auto;
+      }
+
+      /* Mission */
+      .mission-body {
+        font-size: 0.95rem;
+      }
+
+      .section-image {
+        width: 100%;
+        height: 220px;
+      }
+
+      /* Invest */
       .invest-cols {
-        grid-template-columns: 1fr;
-      }
-
-      .gtm-phase {
-        grid-template-columns: 1fr;
-        gap: 16px;
-      }
-
-      .about-grid {
         grid-template-columns: 1fr;
       }
 
       .invest-header {
         flex-direction: column;
+        margin-bottom: 36px;
       }
 
       .invest-meta {
         text-align: left;
+      }
+
+      .invest-title {
+        font-size: 1.6rem;
+      }
+
+      /* About */
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-photo {
+        width: 100%;
+        height: 260px;
+      }
+
+      /* Contact */
+      .contact-lower {
+        padding: 24px 20px;
+      }
+
+      .contact-inner {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .contact-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
       }
     }
   </style>
