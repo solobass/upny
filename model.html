@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Investment Model — UPNY.vc</title>
+  <meta name="description" content="UPNY Ventures — Pre-Seed Investment Model for Deep-Tech NYS founders." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #111111;
+      overflow-x: hidden;
+    }
+
+    /* ── Nav ── */
+    .nav {
+      width: 100%;
+      padding: 24px 120px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: none;
+    }
+
+    .nav-logo img {
+      height: 32px;
+      width: auto;
+      display: block;
+    }
+
+    .nav-back {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #888888;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-back:hover { color: #111111; }
+
+    /* ── Header ── */
+    .page-header {
+      padding: 40px 40px 32px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .page-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #cc9966;
+      margin-bottom: 20px;
+    }
+
+    .page-title {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 24px;
+    }
+
+    .page-intro {
+      font-size: clamp(0.95rem, 2vw, 1.1rem);
+      font-weight: 300;
+      line-height: 1.85;
+      color: #444444;
+      max-width: 860px;
+    }
+
+    /* ── Section shared ── */
+    .section {
+      padding: 80px 40px;
+      border-top: 1px solid #ddd0bb;
+    }
+
+    .section-bg {
+      background: #f0efed;
+    }
+
+    .inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #cc9966;
+      margin-bottom: 48px;
+    }
+
+    .highlight {
+      font-weight: 500;
+      color: #111111;
+    }
+
+    /* ── Fund Grid ── */
+    .fund-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .fund-item {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 28px 24px;
+    }
+
+    .fund-item-label {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #cc9966;
+      margin-bottom: 12px;
+    }
+
+    .fund-item-value {
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+
+    .fund-item-body {
+      font-size: 0.8rem;
+      font-weight: 300;
+      line-height: 1.65;
+      color: #666666;
+    }
+
+    /* ── Phases ── */
+    .phases {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .phase {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 48px;
+      padding: 48px 0;
+      border-top: 1px solid #ddd0bb;
+    }
+
+    .phase:first-child { border-top: none; }
+    .phase:last-child { border-bottom: none; }
+
+    .phase-tag {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #cc9966;
+      margin-bottom: 10px;
+    }
+
+    .phase-name {
+      font-size: 1.15rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+    }
+
+    .phase-duration {
+      font-size: 0.75rem;
+      color: #aaaaaa;
+    }
+
+    .phase-body {
+      font-size: 0.9rem;
+      font-weight: 300;
+      line-height: 1.85;
+      color: #555555;
+    }
+
+    /* ── LP Types ── */
+    .lp-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .lp-item {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 32px;
+      padding: 32px 0;
+      border-top: 1px solid #ddd0bb;
+      align-items: start;
+    }
+
+    .lp-item:first-child { border-top: none; }
+    .lp-item:last-child { border-bottom: none; }
+
+    .lp-number {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #cc9966;
+      padding-top: 3px;
+    }
+
+    .lp-title {
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      margin-bottom: 8px;
+    }
+
+    .lp-body {
+      font-size: 0.875rem;
+      font-weight: 300;
+      line-height: 1.7;
+      color: #666666;
+    }
+
+    /* ── Investor CTA ── */
+    .apply-section {
+      padding: 48px 40px;
+      background:
+        linear-gradient(rgba(247, 243, 236, 0.70), rgba(247, 243, 236, 0.70)),
+        url('assets/albany_background.jpg') center / cover no-repeat;
+      text-align: center;
+      border-top: 1px solid #ddd0bb;
+    }
+
+    .apply-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 64px 48px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .apply-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #cc9966;
+      margin-bottom: 20px;
+    }
+
+    .apply-sub {
+      font-size: 0.95rem;
+      font-weight: 300;
+      color: #666666;
+      margin-bottom: 48px;
+      line-height: 1.7;
+    }
+
+    .apply-btn {
+      display: inline-block;
+      background: #111111;
+      color: #ffffff;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 16px 40px;
+      border-radius: 4px;
+      transition: opacity 0.2s;
+    }
+
+    .apply-btn:hover { opacity: 0.75; }
+
+    a.apply-li-link,
+    a.apply-li-link:visited {
+      color: #cc9966 !important;
+      font-weight: 500;
+      text-decoration: none;
+      border-bottom: 1px solid #cc9966;
+      transition: opacity 0.2s;
+    }
+
+    a.apply-li-link:hover { opacity: 0.65; }
+
+    /* ── Footer ── */
+    .footer {
+      padding: 40px 120px;
+      background: #111111;
+      border-top: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-copy {
+      font-size: 0.7rem;
+      color: #cc9966;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .footer-back {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #666666;
+      text-decoration: none;
+    }
+
+    .footer-back:hover { color: #ffffff; }
+
+    /* ── Responsive ── */
+    @media (max-width: 860px) {
+      .fund-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 640px) {
+      .nav { padding: 20px 24px; }
+      .page-header { padding: 32px 24px 24px; }
+      .page-title { font-size: 1.8rem; }
+      .page-intro { font-size: 0.95rem; }
+
+      .section { padding: 48px 24px; }
+      .section-label { margin-bottom: 28px; }
+
+      .fund-grid { grid-template-columns: 1fr; }
+
+      .phase { grid-template-columns: 1fr; gap: 12px; }
+      .phase-name { font-size: 1rem; }
+      .phase-body { font-size: 0.875rem; }
+
+      .lp-item { grid-template-columns: 36px 1fr; gap: 20px; padding: 24px 0; }
+      .lp-title { font-size: 0.95rem; }
+
+      .apply-section { padding: 40px 24px; }
+      .apply-card { padding: 36px 24px; }
+      .apply-sub { font-size: 0.875rem; }
+
+      .footer { padding: 28px 24px; }
+      .footer-copy { font-size: 0.65rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav class="nav">
+    <div class="nav-logo">
+      <a href="index.html">
+        <img src="assets/UPNY_Albany_banner.png" alt="UPNY.vc" />
+      </a>
+    </div>
+    <a href="index.html" class="nav-back">← Back to UPNY.vc</a>
+  </nav>
+
+  <!-- ── PAGE HEADER ── -->
+  <div class="page-header">
+    <p class="page-label">Investment Model</p>
+    <h1 class="page-title">Built to Back the Science.<br />Built to Bridge the Gap.</h1>
+    <p class="page-intro">
+      UPNY Ventures is a pre-seed fund purpose-built for deep-tech commercialization. We deploy <span class="highlight">capital and operational support</span> together — backing founders before customers, before revenue, with the conviction that the bottleneck isn't the science. It's the go-to-market.
+    </p>
+  </div>
+
+  <!-- ── THE FUND ── -->
+  <section class="section section-bg" style="border-top: none;">
+    <div class="inner">
+      <p class="section-label">The Fund</p>
+      <div class="fund-grid">
+
+        <div class="fund-item">
+          <div class="fund-item-label">Stage</div>
+          <div class="fund-item-value">Pre-Seed</div>
+          <div class="fund-item-body">We invest before customers, before revenue — at the earliest moment a founder needs capital and direction.</div>
+        </div>
+
+        <div class="fund-item">
+          <div class="fund-item-label">Geography</div>
+          <div class="fund-item-value">New York State</div>
+          <div class="fund-item-body">Focused on founders emerging from NYS incubators, accelerators, and university programs.</div>
+        </div>
+
+        <div class="fund-item">
+          <div class="fund-item-label">Focus</div>
+          <div class="fund-item-value">Deep Technology</div>
+          <div class="fund-item-body">Defensible technical differentiation — products, not services — with the potential to fundamentally shift an industry.</div>
+        </div>
+
+        <div class="fund-item">
+          <div class="fund-item-label">Approach</div>
+          <div class="fund-item-value">Capital + GTM</div>
+          <div class="fund-item-body">Every investment includes structured go-to-market support. A check alone doesn't bridge the gap.</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── THE PATH ── -->
+  <section class="section">
+    <div class="inner">
+      <p class="section-label">The Portfolio Path</p>
+      <div class="phases">
+
+        <div class="phase">
+          <div class="phase-meta">
+            <div class="phase-tag">Year 1</div>
+            <div class="phase-name">Activate</div>
+            <div class="phase-duration">Customer Discovery & Early Validation</div>
+          </div>
+          <div class="phase-body">
+            Founders complete the GTM Program — refining their ICP, building outreach infrastructure, and running their first real customer conversations. The goal: early signal. A letter of intent, a pilot interest, a paying early adopter. Proof that the market is listening.
+          </div>
+        </div>
+
+        <div class="phase">
+          <div class="phase-meta">
+            <div class="phase-tag">Year 2</div>
+            <div class="phase-name">Convert</div>
+            <div class="phase-duration">Pilots, Contracts & Early Revenue</div>
+          </div>
+          <div class="phase-body">
+            Customer conversations become paying relationships. Signed pilots, contracted early adopters, and the first revenue milestones — the proof points needed to open the next conversation with seed-stage investors.
+          </div>
+        </div>
+
+        <div class="phase">
+          <div class="phase-meta">
+            <div class="phase-tag">Year 3</div>
+            <div class="phase-name">Scale</div>
+            <div class="phase-duration">$1M+ ARR Target</div>
+          </div>
+          <div class="phase-body">
+            With a repeatable sales motion and validated value proposition, portfolio companies push toward their first significant revenue milestone — the foundation for a Series A narrative.
+          </div>
+        </div>
+
+        <div class="phase">
+          <div class="phase-meta">
+            <div class="phase-tag">Year 4</div>
+            <div class="phase-name">Raise or Exit</div>
+            <div class="phase-duration">Series A or Acquisition</div>
+          </div>
+          <div class="phase-body">
+            Companies with revenue, retention, and a clear growth trajectory are positioned to raise a Series A or enter acquisition conversations. UPNY actively supports downstream fundraising introductions and M&amp;A readiness.
+          </div>
+        </div>
+
+        <div class="phase">
+          <div class="phase-meta">
+            <div class="phase-tag">Year 5</div>
+            <div class="phase-name">Return</div>
+            <div class="phase-duration">LP Distributions</div>
+          </div>
+          <div class="phase-body">
+            Liquidity events — acquisitions, secondary transactions, and downstream rounds — generate returns to LP investors. The fund is designed to produce meaningful early distributions through the portfolio's most successful outcomes.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── LP STRUCTURE ── -->
+  <section class="section section-bg">
+    <div class="inner">
+      <p class="section-label">Who Invests With Us</p>
+      <div class="lp-list">
+
+        <div class="lp-item">
+          <div class="lp-number">01</div>
+          <div>
+            <div class="lp-title">Angel Investors</div>
+            <div class="lp-body">Individual investors seeking early-stage access to incubated and accelerated deep-tech startups. We target investments alongside experienced operators and advisors who contribute mentorship, guidance, and strategic support within portfolio companies — strengthening the entrepreneurial ecosystem through active participation.</div>
+          </div>
+        </div>
+
+        <div class="lp-item">
+          <div class="lp-number">02</div>
+          <div>
+            <div class="lp-title">Institutional LPs</div>
+            <div class="lp-body">Family offices and institutional investors seeking exposure to a structured pre-seed vehicle backed by operational support and commercialization strategy. UPNY offers a differentiated entry point — capital deployed alongside a hands-on GTM program that improves portfolio company survival rates and shortens the path to revenue.</div>
+          </div>
+        </div>
+
+        <div class="lp-item">
+          <div class="lp-number">03</div>
+          <div>
+            <div class="lp-title">State & Economic Partners</div>
+            <div class="lp-body">New York State programs and economic development organizations focused on deep-tech commercialization, regional growth, and translating publicly funded research into market-ready companies. UPNY is purpose-built to align with — and amplify — existing NYS investment in technology and entrepreneurship.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── INVESTOR CTA ── -->
+  <section class="apply-section">
+    <div class="apply-card">
+      <h2 class="apply-title">Investor Inquiries</h2>
+      <p class="apply-sub">
+        We're building Fund I and selectively meeting with investors aligned to our thesis.<br /><br />
+        Follow <a href="https://www.linkedin.com/company/upny" target="_blank" class="apply-li-link">UPNY</a> for fund announcements and updates.
+      </p>
+      <a href="mailto:invest@upny.vc" class="apply-btn">Get In Touch</a>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <span class="footer-copy">© 2026 UPNY Ventures · New York</span>
+    <a href="index.html" class="footer-back">← Back to UPNY.vc</a>
+  </footer>
+
+</body>
+</html>
