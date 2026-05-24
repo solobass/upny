@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Investment Model — UPNY.vc</title>
-  <meta name="description" content="UPNY Ventures — Pre-Seed Investment Model for Deep-Tech NYS founders." />
+  <meta name="description" content="UPNY Ventures — A structured commercialization and venture creation platform for Deep-Tech NYS founders." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -108,20 +108,76 @@
       color: #111111;
     }
 
-    /* ── Fund Grid ── */
-    .fund-grid {
+    .section-intro {
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.9;
+      color: #444444;
+      max-width: 780px;
+      margin-bottom: 56px;
+    }
+
+    /* ── Criteria (numbered list) ── */
+    .criteria {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .criterion {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
+      grid-template-columns: 48px 1fr;
+      gap: 32px;
+      padding: 32px 0;
+      border-top: 1px solid #ddd0bb;
+      align-items: start;
     }
 
-    .fund-item {
-      background: #ffffff;
-      border-radius: 10px;
-      padding: 28px 24px;
+    .criterion:first-child { border-top: none; }
+    .criterion:last-child { border-bottom: none; }
+
+    .criterion-number {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #cc9966;
+      padding-top: 3px;
     }
 
-    .fund-item-label {
+    .criterion-title {
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      margin-bottom: 8px;
+    }
+
+    .criterion-body {
+      font-size: 0.875rem;
+      font-weight: 300;
+      line-height: 1.75;
+      color: #666666;
+    }
+
+    /* ── Why Now Grid ── */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0;
+    }
+
+    .why-item {
+      padding: 36px 56px 36px 0;
+      border-bottom: 1px solid #ddd0bb;
+    }
+
+    .why-item:nth-child(even) {
+      padding: 36px 0 36px 56px;
+      border-left: 1px solid #ddd0bb;
+    }
+
+    .why-item:nth-last-child(-n+2) { border-bottom: none; }
+
+    .why-number {
       font-size: 0.65rem;
       font-weight: 600;
       letter-spacing: 0.14em;
@@ -130,22 +186,123 @@
       margin-bottom: 12px;
     }
 
-    .fund-item-value {
-      font-size: 1rem;
+    .why-title {
+      font-size: 0.95rem;
       font-weight: 500;
       letter-spacing: -0.01em;
       margin-bottom: 8px;
-      line-height: 1.3;
     }
 
-    .fund-item-body {
-      font-size: 0.8rem;
+    .why-body {
+      font-size: 0.85rem;
       font-weight: 300;
-      line-height: 1.65;
+      line-height: 1.75;
       color: #666666;
     }
 
-    /* ── Phases ── */
+    /* ── Platform Funnel ── */
+    .funnel {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .funnel-step {
+      display: grid;
+      grid-template-columns: 220px 140px 1fr;
+      gap: 48px;
+      padding: 48px 0;
+      border-top: 1px solid #ddd0bb;
+      align-items: start;
+    }
+
+    .funnel-step:first-child { border-top: none; }
+
+    .funnel-tag {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #cc9966;
+      margin-bottom: 10px;
+    }
+
+    .funnel-name {
+      font-size: 1.15rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+    }
+
+    .funnel-sub {
+      font-size: 0.75rem;
+      color: #aaaaaa;
+      line-height: 1.5;
+    }
+
+    .funnel-metric {
+      font-size: clamp(2rem, 3.5vw, 2.8rem);
+      font-weight: 600;
+      color: #cc9966;
+      letter-spacing: -0.04em;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .funnel-metric-label {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #aaaaaa;
+    }
+
+    .funnel-desc {
+      font-size: 0.875rem;
+      font-weight: 300;
+      line-height: 1.9;
+      color: #555555;
+    }
+
+    /* ── Commercialization Infrastructure Grid ── */
+    .infra-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: #ddd0bb;
+      border: 1px solid #ddd0bb;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .infra-item {
+      background: #f7f5f2;
+      padding: 32px 28px;
+    }
+
+    .infra-label {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #cc9966;
+      margin-bottom: 12px;
+    }
+
+    .infra-title {
+      font-size: 0.95rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      margin-bottom: 8px;
+    }
+
+    .infra-body {
+      font-size: 0.8rem;
+      font-weight: 300;
+      line-height: 1.7;
+      color: #666666;
+    }
+
+    /* ── Strategy (phase layout) ── */
     .phases {
       display: flex;
       flex-direction: column;
@@ -155,7 +312,7 @@
       display: grid;
       grid-template-columns: 220px 1fr;
       gap: 48px;
-      padding: 48px 0;
+      padding: 40px 0;
       border-top: 1px solid #ddd0bb;
     }
 
@@ -172,22 +329,46 @@
     }
 
     .phase-name {
-      font-size: 1.15rem;
-      font-weight: 600;
+      font-size: 1rem;
+      font-weight: 500;
       letter-spacing: -0.02em;
-      margin-bottom: 6px;
-    }
-
-    .phase-duration {
-      font-size: 0.75rem;
-      color: #aaaaaa;
     }
 
     .phase-body {
-      font-size: 0.9rem;
+      font-size: 0.875rem;
       font-weight: 300;
       line-height: 1.85;
-      color: #555555;
+      color: #666666;
+    }
+
+    /* ── Vision Grid ── */
+    .vision-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 48px;
+    }
+
+    .vision-number {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #cc9966;
+      margin-bottom: 16px;
+    }
+
+    .vision-title {
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+    }
+
+    .vision-body {
+      font-size: 0.85rem;
+      font-weight: 300;
+      line-height: 1.8;
+      color: #666666;
     }
 
     /* ── LP Types ── */
@@ -227,7 +408,7 @@
     .lp-body {
       font-size: 0.875rem;
       font-weight: 300;
-      line-height: 1.7;
+      line-height: 1.75;
       color: #666666;
     }
 
@@ -325,7 +506,17 @@
 
     /* ── Responsive ── */
     @media (max-width: 860px) {
-      .fund-grid { grid-template-columns: repeat(2, 1fr); }
+      .why-grid { grid-template-columns: 1fr; }
+      .why-item { padding: 28px 0; border-left: none !important; }
+      .why-item:nth-last-child(-n+2) { border-bottom: 1px solid #ddd0bb; }
+      .why-item:last-child { border-bottom: none; }
+
+      .funnel-step { grid-template-columns: 1fr 120px; }
+      .funnel-desc { grid-column: 1 / -1; margin-top: 0; }
+
+      .infra-grid { grid-template-columns: repeat(2, 1fr); }
+      .vision-grid { grid-template-columns: 1fr; gap: 32px; }
+      .phase { grid-template-columns: 1fr; gap: 12px; }
     }
 
     @media (max-width: 640px) {
@@ -336,12 +527,12 @@
 
       .section { padding: 48px 24px; }
       .section-label { margin-bottom: 28px; }
+      .section-intro { font-size: 0.9rem; margin-bottom: 36px; }
 
-      .fund-grid { grid-template-columns: 1fr; }
-
-      .phase { grid-template-columns: 1fr; gap: 12px; }
-      .phase-name { font-size: 1rem; }
-      .phase-body { font-size: 0.875rem; }
+      .criterion { grid-template-columns: 36px 1fr; gap: 20px; padding: 24px 0; }
+      .funnel-step { grid-template-columns: 1fr; gap: 16px; padding: 36px 0; }
+      .funnel-metric { font-size: 2rem; }
+      .infra-grid { grid-template-columns: 1fr; }
 
       .lp-item { grid-template-columns: 36px 1fr; gap: 20px; padding: 24px 0; }
       .lp-title { font-size: 0.95rem; }
@@ -370,104 +561,263 @@
   <!-- ── PAGE HEADER ── -->
   <div class="page-header">
     <p class="page-label">Investment Model</p>
-    <h1 class="page-title">Built to Back the Science.<br />Built to Bridge the Gap.</h1>
+    <h1 class="page-title">A Commercialization Engine.<br />Not a Passive Fund.</h1>
     <p class="page-intro">
-      UPNY Ventures is a pre-seed fund purpose-built for deep-tech commercialization. We deploy <span class="highlight">capital and operational support</span> together — backing founders before customers, before revenue, with the conviction that the bottleneck isn't the science. It's the go-to-market.
+      UPNY Ventures operates as a structured venture creation platform — embedding commercialization infrastructure directly into the investment process. We systematically identify, validate, and fund high-potential deep-tech companies emerging from New York State's university and incubator network. <span class="highlight">Capital is deployed only after demonstrating real commercial traction.</span>
     </p>
   </div>
 
-  <!-- ── THE FUND ── -->
+  <!-- ── THE GAP ── -->
   <section class="section section-bg" style="border-top: none;">
     <div class="inner">
-      <p class="section-label">The Fund</p>
-      <div class="fund-grid">
+      <p class="section-label">The Problem</p>
+      <p class="section-intro">
+        Most deep-tech companies do not fail because the science stops working. They fail because no one built the commercial infrastructure to move it forward. The gap between proof-of-concept and investable company is structural — the product of a system that produces scientific output without the corresponding capacity to deploy it.
+      </p>
+      <div class="criteria">
 
-        <div class="fund-item">
-          <div class="fund-item-label">Stage</div>
-          <div class="fund-item-value">Pre-Seed</div>
-          <div class="fund-item-body">We invest before customers, before revenue — at the earliest moment a founder needs capital and direction.</div>
+        <div class="criterion">
+          <div class="criterion-number">01</div>
+          <div>
+            <div class="criterion-title">The Translation Gap</div>
+            <div class="criterion-body">Deep-tech founders emerge from years of technical development with minimal exposure to commercial markets, customer discovery, or sales infrastructure. The skills required to build breakthrough technology are categorically different from those required to commercialize it. Without structured support at exactly this moment, most never bridge the gap.</div>
+          </div>
         </div>
 
-        <div class="fund-item">
-          <div class="fund-item-label">Geography</div>
-          <div class="fund-item-value">New York State</div>
-          <div class="fund-item-body">Focused on founders emerging from NYS incubators, accelerators, and university programs.</div>
+        <div class="criterion">
+          <div class="criterion-number">02</div>
+          <div>
+            <div class="criterion-title">The Timing Gap</div>
+            <div class="criterion-body">Traditional venture capital is structured for companies that have already demonstrated commercial traction. Grants and incubation programs end long before it exists. The window between proof-of-concept and institutional investor interest is the most dangerous point in a deep-tech company's lifecycle — and it is almost entirely unsupported.</div>
+          </div>
         </div>
 
-        <div class="fund-item">
-          <div class="fund-item-label">Focus</div>
-          <div class="fund-item-value">Deep Technology</div>
-          <div class="fund-item-body">Defensible technical differentiation — products, not services — with the potential to fundamentally shift an industry.</div>
-        </div>
-
-        <div class="fund-item">
-          <div class="fund-item-label">Approach</div>
-          <div class="fund-item-value">Capital + GTM</div>
-          <div class="fund-item-body">Every investment includes structured go-to-market support. A check alone doesn't bridge the gap.</div>
+        <div class="criterion">
+          <div class="criterion-number">03</div>
+          <div>
+            <div class="criterion-title">The Selection Gap</div>
+            <div class="criterion-body">Most early-stage venture selection is built around founder storytelling and pitch quality — not market evidence. Deep-tech founders are scientists and engineers, not salespeople. The best technologies routinely go unfunded because their founders can't pitch. A selection process optimized for narrative produces a systematically biased portfolio.</div>
+          </div>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ── THE PATH ── -->
+  <!-- ── WHY NOW ── -->
   <section class="section">
     <div class="inner">
-      <p class="section-label">The Portfolio Path</p>
+      <p class="section-label">Why Now</p>
+      <p class="section-intro">
+        A structural shift in the industrial economy has created unprecedented demand for domestic deep-tech capacity. Policy, capital, and industrial demand are converging at scale — opening a window to build the early-stage commercialization infrastructure that has not previously existed.
+      </p>
+      <div class="why-grid">
+
+        <div class="why-item">
+          <div class="why-number">01</div>
+          <div class="why-title">Federal Industrial Policy</div>
+          <div class="why-body">The CHIPS and Science Act, Inflation Reduction Act, and National Defense Authorization Act represent over $400B in federal commitment to domestic technology and manufacturing. Demand for qualified domestic deep-tech companies is accelerating faster than the supply of commercially ready ventures to absorb it.</div>
+        </div>
+
+        <div class="why-item">
+          <div class="why-number">02</div>
+          <div class="why-title">AI Infrastructure Buildout</div>
+          <div class="why-body">Advanced computing, photonics, novel semiconductor architectures, and edge hardware are in structural demand as AI deployment scales globally. The enabling technologies are deep-tech — and the commercialization infrastructure to bring them to market is critically underdeveloped at the pre-seed stage.</div>
+        </div>
+
+        <div class="why-item">
+          <div class="why-number">03</div>
+          <div class="why-title">Advanced Manufacturing Reshoring</div>
+          <div class="why-body">Decades of offshore dependency created fragile supply chains. Policy-driven reshoring is generating structural demand for domestic advanced manufacturing capability — an area where New York State's research output is directly applicable and largely untapped by commercial capital.</div>
+        </div>
+
+        <div class="why-item">
+          <div class="why-number">04</div>
+          <div class="why-title">New York State Innovation Output</div>
+          <div class="why-body">Cornell, Columbia, RPI, NYU, and the SUNY system collectively produce world-class deep-tech research. State-funded incubators and federal research programs add significant capacity. The raw innovation output is exceptional. The commercialization infrastructure available to those founders is not.</div>
+        </div>
+
+        <div class="why-item">
+          <div class="why-number">05</div>
+          <div class="why-title">The Venture Capital Gap</div>
+          <div class="why-body">Generalist pre-seed funds lack the domain expertise to evaluate deep-tech opportunities with confidence. Deep-tech-focused funds tend to enter at Series A or later — after commercial risk has been reduced by others. The pre-seed commercialization gap remains systematically unaddressed by existing capital.</div>
+        </div>
+
+        <div class="why-item">
+          <div class="why-number">06</div>
+          <div class="why-title">AI-Enabled Commercialization</div>
+          <div class="why-body">Advances in AI-powered customer discovery, GTM execution, and market intelligence have dramatically lowered the cost — and accelerated the speed — of early-stage commercialization. Founders equipped with the right infrastructure can achieve in months what previously required years and significantly more capital.</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HOW THE PLATFORM WORKS ── -->
+  <section class="section section-bg">
+    <div class="inner">
+      <p class="section-label">How the Platform Works</p>
+      <p class="section-intro">
+        UPNY operates as a staged commercialization and selection engine. Each phase is designed to generate real commercial evidence — systematically replacing founder storytelling with market proof as the primary basis for investment decisions.
+      </p>
+      <div class="funnel">
+
+        <div class="funnel-step">
+          <div>
+            <div class="funnel-tag">Phase I</div>
+            <div class="funnel-name">Discovery</div>
+            <div class="funnel-sub">6-Week Structured Evaluation</div>
+          </div>
+          <div>
+            <div class="funnel-metric">100+</div>
+            <div class="funnel-metric-label">Startups Evaluated</div>
+          </div>
+          <div class="funnel-desc">
+            Eligible startups enter a structured six-week evaluation program focused on commercialization readiness, market potential, GTM thinking, customer discovery capacity, and founder execution capability. The program generates objective performance data across every participant. Advancement is earned through demonstrated quality — not assumed.
+          </div>
+        </div>
+
+        <div class="funnel-step">
+          <div>
+            <div class="funnel-tag">Phase II</div>
+            <div class="funnel-name">Validation</div>
+            <div class="funnel-sub">12-Week Commercialization Program</div>
+          </div>
+          <div>
+            <div class="funnel-metric">~30</div>
+            <div class="funnel-metric-label">Companies Advanced</div>
+          </div>
+          <div class="funnel-desc">
+            Top-performing companies from Discovery enter the active commercialization program. Over twelve weeks, UPNY deploys its GTM infrastructure alongside each team — driving customer discovery at scale, developing pilots, pursuing LOIs, and building the commercial relationships and execution systems that produce investable evidence. Founders are scored throughout.
+          </div>
+        </div>
+
+        <div class="funnel-step">
+          <div>
+            <div class="funnel-tag">Investment Selection</div>
+            <div class="funnel-name">Capital Deployment</div>
+            <div class="funnel-sub">Commercialization-Driven</div>
+          </div>
+          <div>
+            <div class="funnel-metric">5–10</div>
+            <div class="funnel-metric-label">Companies Funded</div>
+          </div>
+          <div class="funnel-desc">
+            Investment decisions are made on the basis of demonstrated commercial traction — not pitch performance or founder pedigree. Only companies that have produced measurable market validation through the platform are eligible for funding. Capital is deployed as a direct function of commercial evidence generated during the program.
+          </div>
+        </div>
+
+        <div class="funnel-step">
+          <div>
+            <div class="funnel-tag">Repeatable Pipeline</div>
+            <div class="funnel-name">Scalable Venture Creation</div>
+            <div class="funnel-sub">Cohort by Cohort</div>
+          </div>
+          <div>
+            <div class="funnel-metric" style="font-size: 1.6rem; letter-spacing: -0.02em; color: #aaaaaa; font-weight: 500;">Ongoing</div>
+            <div class="funnel-metric-label">Per Cohort Cycle</div>
+          </div>
+          <div class="funnel-desc">
+            The Discovery-to-Validation-to-Investment cycle repeats across cohorts. Each cycle generates a new set of validated, funded companies while building cumulative platform data — improving sourcing accuracy, selection precision, and commercialization efficiency over time. The result is a scalable engine for converting scientific innovation into investable companies, not a one-time portfolio.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── COMMERCIALIZATION INFRASTRUCTURE ── -->
+  <section class="section">
+    <div class="inner">
+      <p class="section-label">Commercialization Infrastructure</p>
+      <p class="section-intro">
+        Every company in the UPNY platform is supported by the same operational infrastructure we use to evaluate and select investments — deployed with direct involvement at every stage of execution.
+      </p>
+      <div class="infra-grid">
+
+        <div class="infra-item">
+          <div class="infra-label">System 01</div>
+          <div class="infra-title">Customer Discovery</div>
+          <div class="infra-body">Structured ICP development, market segmentation, and systematic outreach frameworks designed to generate real customer intelligence — not anecdotal feedback from warm contacts.</div>
+        </div>
+
+        <div class="infra-item">
+          <div class="infra-label">System 02</div>
+          <div class="infra-title">GTM Strategy & Execution</div>
+          <div class="infra-body">Full go-to-market planning aligned to technology stage, market vertical, and commercialization timeline — with built-in execution accountability and weekly sprint cadence.</div>
+        </div>
+
+        <div class="infra-item">
+          <div class="infra-label">System 03</div>
+          <div class="infra-title">Pilot Development</div>
+          <div class="infra-body">Design and management of structured customer pilots that generate commercial evidence and create pathways to revenue without premature product commitment or scope overextension.</div>
+        </div>
+
+        <div class="infra-item">
+          <div class="infra-label">System 04</div>
+          <div class="infra-title">Outreach Infrastructure</div>
+          <div class="infra-body">Scalable, multi-channel outreach systems built to operate at the velocity required for meaningful customer development — not ad hoc networking or one-off introductions.</div>
+        </div>
+
+        <div class="infra-item">
+          <div class="infra-label">System 05</div>
+          <div class="infra-title">LOI & Early Contract Facilitation</div>
+          <div class="infra-body">Structured support for converting customer interest into signed commercial agreements — letters of intent, pilot contracts, and early-stage arrangements that constitute genuine market validation.</div>
+        </div>
+
+        <div class="infra-item">
+          <div class="infra-label">System 06</div>
+          <div class="infra-title">Investor Readiness</div>
+          <div class="infra-body">Systematic preparation for downstream fundraising — building the evidence base, narrative, and institutional relationships required to raise a Seed round from qualified investors.</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── INVESTMENT STRATEGY ── -->
+  <section class="section section-bg">
+    <div class="inner">
+      <p class="section-label">Investment Strategy</p>
       <div class="phases">
 
         <div class="phase">
-          <div class="phase-meta">
-            <div class="phase-tag">Year 1</div>
-            <div class="phase-name">Activate</div>
-            <div class="phase-duration">Customer Discovery & Early Validation</div>
+          <div>
+            <div class="phase-tag">Principle 01</div>
+            <div class="phase-name">Commercialization-First Selection</div>
           </div>
           <div class="phase-body">
-            Founders complete the GTM Program — refining their ICP, building outreach infrastructure, and running their first real customer conversations. The goal: early signal. A letter of intent, a pilot interest, a paying early adopter. Proof that the market is listening.
+            Investment eligibility is earned through performance in the Discovery and Validation programs — not through pitch quality or founder background. We do not fund companies that have not yet demonstrated commercial traction through the platform. The evaluation process is the deal pipeline.
           </div>
         </div>
 
         <div class="phase">
-          <div class="phase-meta">
-            <div class="phase-tag">Year 2</div>
-            <div class="phase-name">Convert</div>
-            <div class="phase-duration">Pilots, Contracts & Early Revenue</div>
+          <div>
+            <div class="phase-tag">Principle 02</div>
+            <div class="phase-name">Validation-Driven Capital Allocation</div>
           </div>
           <div class="phase-body">
-            Customer conversations become paying relationships. Signed pilots, contracted early adopters, and the first revenue milestones — the proof points needed to open the next conversation with seed-stage investors.
+            Capital follows commercial evidence. Companies that produce pilots, letters of intent, beta customers, and early revenue through the program are prioritized. Investment decisions are a function of demonstrated market response — not financial projection models or TAM narratives.
           </div>
         </div>
 
         <div class="phase">
-          <div class="phase-meta">
-            <div class="phase-tag">Year 3</div>
-            <div class="phase-name">Scale</div>
-            <div class="phase-duration">$1M+ ARR Target</div>
+          <div>
+            <div class="phase-tag">Principle 03</div>
+            <div class="phase-name">Selective Deployment</div>
           </div>
           <div class="phase-body">
-            With a repeatable sales motion and validated value proposition, portfolio companies push toward their first significant revenue milestone — the foundation for a Series A narrative.
+            The platform is deliberately structured to fund a small number of companies per cohort cycle. Selectivity is not a constraint — it is the model. A high-volume commercialization pipeline that terminates in a small, high-conviction portfolio is categorically different from a spray-and-pray approach to early-stage investing.
           </div>
         </div>
 
         <div class="phase">
-          <div class="phase-meta">
-            <div class="phase-tag">Year 4</div>
-            <div class="phase-name">Raise or Exit</div>
-            <div class="phase-duration">Series A or Acquisition</div>
+          <div>
+            <div class="phase-tag">Principle 04</div>
+            <div class="phase-name">Pre-Seed Stage, Seed-Ready Trajectory</div>
           </div>
           <div class="phase-body">
-            Companies with revenue, retention, and a clear growth trajectory are positioned to raise a Series A or enter acquisition conversations. UPNY actively supports downstream fundraising introductions and M&amp;A readiness.
-          </div>
-        </div>
-
-        <div class="phase">
-          <div class="phase-meta">
-            <div class="phase-tag">Year 5</div>
-            <div class="phase-name">Return</div>
-            <div class="phase-duration">LP Distributions</div>
-          </div>
-          <div class="phase-body">
-            Liquidity events — acquisitions, secondary transactions, and downstream rounds — generate returns to LP investors. The fund is designed to produce meaningful early distributions through the portfolio's most successful outcomes.
+            We deploy at the pre-seed stage — before customers, before revenue — with the specific mandate to build companies toward seed-stage readiness. The goal is not to provide capital and observe. It is to systematically produce companies capable of raising institutional Seed rounds from qualified downstream investors.
           </div>
         </div>
 
@@ -475,8 +825,89 @@
     </div>
   </section>
 
-  <!-- ── LP STRUCTURE ── -->
+  <!-- ── COMPETITIVE ADVANTAGE ── -->
+  <section class="section">
+    <div class="inner">
+      <p class="section-label">Competitive Advantage</p>
+      <div class="criteria">
+
+        <div class="criterion">
+          <div class="criterion-number">01</div>
+          <div>
+            <div class="criterion-title">Proprietary Sourcing Pipeline</div>
+            <div class="criterion-body">Deal flow is embedded directly in UPNY's commercialization platform. Every company in the Discovery program is a potential investment. There is no competitive sourcing process — the pipeline is proprietary by design, built through embedded relationships within NYS university programs, incubators, and state innovation infrastructure.</div>
+          </div>
+        </div>
+
+        <div class="criterion">
+          <div class="criterion-number">02</div>
+          <div>
+            <div class="criterion-title">Commercial Evidence Before Capital</div>
+            <div class="criterion-body">Investment decisions are made after companies have generated real market evidence through the platform — not before. This fundamentally de-risks portfolio selection relative to conventional pre-seed investing, where capital is typically deployed on the basis of team quality and projection models alone.</div>
+          </div>
+        </div>
+
+        <div class="criterion">
+          <div class="criterion-number">03</div>
+          <div>
+            <div class="criterion-title">Operational Involvement</div>
+            <div class="criterion-body">UPNY is not a passive capital provider. We are operationally embedded in the commercialization process of every platform company — providing GTM infrastructure, customer development support, and execution accountability from day one. The fund and the program are the same organization.</div>
+          </div>
+        </div>
+
+        <div class="criterion">
+          <div class="criterion-number">04</div>
+          <div>
+            <div class="criterion-title">Systematic Repeatability</div>
+            <div class="criterion-body">The Discovery-Validation-Investment model is designed to operate as a repeatable machine — improving in precision and efficiency across cohorts. Most venture funds are built around individual judgment at the point of investment. UPNY is built around a systematic commercialization process that generates investment evidence before any capital decision is made.</div>
+          </div>
+        </div>
+
+        <div class="criterion">
+          <div class="criterion-number">05</div>
+          <div>
+            <div class="criterion-title">Embedded Ecosystem Access</div>
+            <div class="criterion-body">Years of direct relationships within New York State's university system, incubator network, and state economic development infrastructure create preferential access to the most promising early-stage deep-tech research before it reaches the broader market — and before it attracts competitive interest from other early-stage investors.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── LONG-TERM VISION ── -->
   <section class="section section-bg">
+    <div class="inner">
+      <p class="section-label">Long-Term Vision</p>
+      <p class="section-intro">
+        UPNY is not simply building a venture fund. It is building the commercialization infrastructure that New York State's deep-tech innovation ecosystem has lacked — and demonstrating that a commercialization-driven venture platform is a superior model for early-stage deep-tech investing.
+      </p>
+      <div class="vision-grid">
+
+        <div>
+          <div class="vision-number">Vision 01</div>
+          <div class="vision-title">Venture Creation at Scale</div>
+          <div class="vision-body">As the platform matures across cohorts, UPNY builds an increasingly efficient engine for converting scientific innovation into fundable companies. Each cycle generates better data, stronger ecosystem relationships, and more precise selection — compounding the operational value of the platform over time.</div>
+        </div>
+
+        <div>
+          <div class="vision-number">Vision 02</div>
+          <div class="vision-title">Strengthening the Innovation Pipeline</div>
+          <div class="vision-body">The UPNY model is designed to fill a structural gap in the regional innovation ecosystem — not simply capitalize on it. By building repeatable commercialization infrastructure, UPNY directly increases the rate at which NYS deep-tech research reaches commercial markets and attracts downstream institutional capital.</div>
+        </div>
+
+        <div>
+          <div class="vision-number">Vision 03</div>
+          <div class="vision-title">A Replicable Regional Model</div>
+          <div class="vision-body">UPNY's thesis is that geography-specific, commercialization-driven venture platforms are a superior model for early-stage deep-tech investing. If proven at scale in New York State, the model has clear application to every high-output innovation region that produces more scientific research than it successfully commercializes.</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WHO INVESTS WITH US ── -->
+  <section class="section">
     <div class="inner">
       <p class="section-label">Who Invests With Us</p>
       <div class="lp-list">
@@ -485,23 +916,23 @@
           <div class="lp-number">01</div>
           <div>
             <div class="lp-title">Angel Investors</div>
-            <div class="lp-body">Individual investors seeking early-stage access to incubated and accelerated deep-tech startups. We target investments alongside experienced operators and advisors who contribute mentorship, guidance, and strategic support within portfolio companies — strengthening the entrepreneurial ecosystem through active participation.</div>
+            <div class="lp-body">Individual investors seeking structured early-stage access to incubated and accelerated deep-tech startups. UPNY offers angel LPs a differentiated entry point — capital deployed alongside a rigorous commercialization program that systematically improves company quality before investment is made.</div>
           </div>
         </div>
 
         <div class="lp-item">
           <div class="lp-number">02</div>
           <div>
-            <div class="lp-title">Institutional LPs</div>
-            <div class="lp-body">Family offices and institutional investors seeking exposure to a structured pre-seed vehicle backed by operational support and commercialization strategy. UPNY offers a differentiated entry point — capital deployed alongside a hands-on GTM program that improves portfolio company survival rates and shortens the path to revenue.</div>
+            <div class="lp-title">Family Offices & Institutional LPs</div>
+            <div class="lp-body">Family offices and institutional investors seeking exposure to a structured pre-seed vehicle backed by operational infrastructure and a repeatable selection process. UPNY reduces pre-seed investment risk through commercialization-driven portfolio construction — deploying capital only after companies have generated real market evidence.</div>
           </div>
         </div>
 
         <div class="lp-item">
           <div class="lp-number">03</div>
           <div>
-            <div class="lp-title">State & Economic Partners</div>
-            <div class="lp-body">New York State programs and economic development organizations focused on deep-tech commercialization, regional growth, and translating publicly funded research into market-ready companies. UPNY is purpose-built to align with — and amplify — existing NYS investment in technology and entrepreneurship.</div>
+            <div class="lp-title">State & Economic Development Partners</div>
+            <div class="lp-body">New York State programs and economic development organizations focused on deep-tech commercialization and regional growth. UPNY is purpose-built to align with — and amplify — existing NYS public investment in technology innovation, translating state-funded research into market-ready, investment-grade companies.</div>
           </div>
         </div>
 
@@ -514,7 +945,7 @@
     <div class="apply-card">
       <h2 class="apply-title">Investor Inquiries</h2>
       <p class="apply-sub">
-        We're building Fund I and selectively meeting with investors aligned to our thesis.<br /><br />
+        We are building Fund I and meeting selectively with LPs aligned to our thesis.<br /><br />
         Follow <a href="https://www.linkedin.com/company/upny" target="_blank" class="apply-li-link">UPNY</a> for fund announcements and updates.
       </p>
       <a href="mailto:invest@upny.vc" class="apply-btn">Get In Touch</a>
