@@ -271,9 +271,61 @@
       opacity: 0.5;
     }
 
+    /* ── The Gap ── */
+    #gap {
+      background: #ffffff;
+    }
+
+    .gap-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .gap-card {
+      background: #f5f5f5;
+      border-radius: 12px;
+      padding: 36px 32px;
+    }
+
+    .gap-stat {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      color: #cc9966;
+      margin-bottom: 10px;
+      line-height: 1;
+    }
+
+    .gap-card-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      color: #111111;
+      margin-bottom: 14px;
+    }
+
+    .gap-card-body {
+      font-size: 0.85rem;
+      font-weight: 300;
+      line-height: 1.75;
+      color: #666666;
+    }
+
+    .gap-paragraph {
+      background: #f5f5f5;
+      border-radius: 12px;
+      padding: 36px 40px;
+      font-size: clamp(0.9rem, 1.5vw, 1rem);
+      font-weight: 300;
+      line-height: 1.9;
+      color: #555555;
+    }
+
     /* ── Invest ── */
     #invest {
-      background: linear-gradient(to bottom, #f5f5f5 calc(100% - 160px), rgba(204, 153, 102, 0.15) calc(100% - 160px));
+      background: linear-gradient(to bottom, #f7f3ec calc(100% - 160px), rgba(204, 153, 102, 0.15) calc(100% - 160px));
     }
 
     .invest-header {
@@ -286,7 +338,7 @@
     }
 
     .invest-title {
-      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-size: clamp(1.4rem, 2.8vw, 2rem);
       font-weight: 600;
       letter-spacing: -0.03em;
       line-height: 1.1;
@@ -606,6 +658,15 @@
         height: 220px;
       }
 
+      /* Gap */
+      .gap-cards {
+        grid-template-columns: 1fr;
+      }
+
+      .gap-paragraph {
+        padding: 28px 24px;
+      }
+
       /* Invest */
       .invest-cols {
         grid-template-columns: 1fr;
@@ -767,12 +828,48 @@
 
   <div class="section-divider"></div>
 
+  <!-- ── THE GAP ── -->
+  <section id="gap" class="section">
+    <div class="inner" style="max-width: 1100px;">
+      <p class="section-label">The Gap</p>
+
+      <div class="gap-cards">
+
+        <div class="gap-card">
+          <div class="gap-stat">$7B+</div>
+          <div class="gap-card-title">Annual University Research Spending</div>
+          <div class="gap-card-body">New York State produces world-class innovation across engineering, AI, biotech, energy, and advanced manufacturing.</div>
+        </div>
+
+        <div class="gap-card">
+          <div class="gap-stat">&lt;5%</div>
+          <div class="gap-card-title">Technologies Reach Commercial Scale</div>
+          <div class="gap-card-body">Most university-developed technologies never successfully transition into scalable companies or market adoption.</div>
+        </div>
+
+        <div class="gap-card">
+          <div class="gap-stat">18–36 Mo</div>
+          <div class="gap-card-title">Average Commercialization Timeline</div>
+          <div class="gap-card-body">Deep-tech founders often require extended pilot validation, customer discovery, and GTM development before institutional funding becomes accessible.</div>
+        </div>
+
+      </div>
+
+      <div class="gap-paragraph">
+        New York State produces world-class innovation across engineering, AI, biotech, energy, and advanced manufacturing — yet many breakthrough technologies fail to progress from research environments into commercially scalable companies. The gap is rarely technical. It is often operational: customer discovery, commercialization strategy, pilot validation, and early go-to-market execution. Traditional venture capital typically waits for traction to emerge, leaving many promising founders without the infrastructure and support required to reach market adoption.
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
   <!-- ── INVEST ── -->
   <section id="invest" class="section section-bg">
     <div class="inner" style="max-width: 1100px;">
       <p class="section-label">Invest</p>
-      <div class="invest-header">
-        <h2 class="invest-title">$5M Fund = 100+ Activated &amp; 30+ Invested</h2>
+      <div class="invest-header" style="background: #ffffff; border-radius: 12px; padding: 28px 36px; margin-bottom: 64px;">
+        <h2 class="invest-title">$5M Fund = 100+ Activated Startups &amp; 30+ Investments</h2>
       </div>
       <div class="invest-cols">
         <div class="invest-col">
