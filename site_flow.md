@@ -55,21 +55,27 @@ From incubated to Seed-ready.
 
 ---
 
-Phase I — Plan · 6–8 weeks
+Phase 1 — GTM Strategy Course · 2 weeks · Free to public
 
-Founders build a structured GTM plan: ideal customer profile, priority verticals, value proposition, and the workflows to execute. Participation is selective — scored on completion and quality. Not everyone advances.
-
----
-
-Phase II — Action · 90 days
-
-Weekly execution sprints, virtual and in-person. Founders expand customer discovery, build outreach at scale, and test their value proposition against real buyers. Goal: early validation outcomes — a letter of intent, a signed pilot, a paying early adopter. Scored throughout.
+Open to all founders. Builds the GTM foundation: ideal customer profile, priority verticals, value proposition, and the workflows to execute. Participation in Phase 2 is selective — evaluated on completion and quality. Not everyone advances.
 
 ---
 
-Phase III — Growth · Pre-Seed Funding
+Phase 2 — 100-Day Challenge · GTM Commercialization Engine
 
-Top performers qualify for pre-seed funding based on scores and demonstrated traction. This is the bridge from university incubator to funded company — with the proof points to raise a Seed round.
+100 days of structured execution. Weekly sprints drive founders through customer discovery, outreach at scale, and value proposition testing against real buyers. Goal: early validation outcomes — a letter of intent, a signed pilot, a paying early adopter. Scored throughout.
+
+---
+
+Phase 3 — Pre-Seed Investment · $25–50K
+
+Top performers from Phases 1 and 2 qualify for a first pre-seed check. Selection based on scores and demonstrated commercial traction. Capital to move from validated interest to early customers and revenue.
+
+---
+
+Phase 4 — Pre-Seed Follow-on Investment · $100K
+
+Companies that deploy Phase 3 capital effectively and continue to demonstrate traction qualify for a follow-on investment. The scaling check — builds on early wins toward a fundable Seed round.
 
 ---
 

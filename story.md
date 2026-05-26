@@ -56,7 +56,7 @@ We back university-incubated deep tech founders — in quantum, energy, advanced
 
 **GTM support.** A structured, hands-on commercialization program that teaches founders how to find customers, build pipeline, test their value proposition, and achieve the early validation milestones that unlock the next round of funding.
 
-The program runs in three phases: Plan (building the GTM foundation), Action (executing customer discovery and outreach at scale), and Growth (funding the top performers who demonstrate traction).
+The program runs in four phases: a free 2-week GTM Strategy Course open to all founders; the 100-Day Challenge, a hands-on commercialization engine; a $25–50K pre-seed investment for top performers; and a $100K follow-on investment for companies that demonstrate continued traction.
 
 The goal isn't to turn scientists into salespeople. It's to give them the tools, the process, and the support to get their first customers — so that the next time they walk into a room, the verdict isn't "not VC ready."
 

@@ -71,38 +71,41 @@ That's what we provide.
 From incubated to Seed-ready.
 
 **[SUBHEAD]**
-A structured, three-phase commercialization program built for founders who know the technology and are learning the market.
+A structured, four-phase commercialization program built for founders who know the technology and are learning the market.
 
 ---
 
-**[PHASE I — PLAN]**
-*6–8 weeks*
+**[PHASE 1 — GTM STRATEGY COURSE]**
+*2 weeks · Free to public*
 
-Every engagement starts with structure. Founders work through a focused GTM planning process: identifying their ideal customer profile, mapping priority verticals, sharpening their value proposition, and building the workflows they'll use to execute.
+Every engagement starts with strategy. Open to all founders, this free 2-week course walks participants through the core GTM foundation: identifying their ideal customer profile, mapping priority verticals, sharpening their value proposition, and understanding the commercial workflows they'll need to execute. The goal: clarity on who the customer is and how to reach them.
 
-The goal at the end of Phase I: a clear, actionable plan and the commitment to work it.
-
-Participation is selective. Founders are scored on completion and quality. Not everyone advances. That's by design.
+Participation in Phase 2 is selective. Founders are evaluated on completion and quality. Not everyone advances. That's by design.
 
 ---
 
-**[PHASE II — ACTION]**
-*90 days*
+**[PHASE 2 — 100-DAY CHALLENGE]**
+*A GTM Commercialization Engine*
 
-This is where the plan becomes a company. Weekly execution sprints — virtual and in-person — drive founders through expanding customer discovery, building outreach at scale, and testing their value proposition against real buyers.
+This is where strategy becomes a company. 100 days of structured execution — weekly sprints drive founders through expanding customer discovery, building outreach at scale, and testing their value proposition against real buyers.
 
-We use enrichment tools and repeatable workflows to move from a list of ten target customers to a hundred or more. By the end of Phase II, the goal is early validation: a letter of intent, a signed pilot, a paying early adopter. Proof that the market is responding.
+We use enrichment tools and repeatable workflows to move from a list of ten target customers to a hundred or more. By the end of the 100-Day Challenge, the goal is early validation: a letter of intent, a signed pilot, a paying early adopter. Proof that the market is responding.
 
 Founders are scored on their work throughout.
 
 ---
 
-**[PHASE III — GROWTH]**
-*Pre-Seed Funding*
+**[PHASE 3 — PRE-SEED INVESTMENT]**
+*$25–50K*
 
-The top performers from Phase I and II qualify for pre-seed funding consideration. Selection is based on scores and demonstrated traction.
+The top performers from Phases 1 and 2 qualify for pre-seed funding consideration. Selection is based on scores and demonstrated commercial traction. This is the first institutional check — capital to move from validated market interest to early customers and revenue.
 
-This is the bridge — from university incubator to funded, growth-stage company, with the commercial proof points to raise a Seed round from the investors who were watching from the start.
+---
+
+**[PHASE 4 — PRE-SEED FOLLOW-ON INVESTMENT]**
+*$100K*
+
+Companies that deploy Phase 3 capital effectively and continue to demonstrate traction qualify for a follow-on pre-seed investment. This is the scaling check — capital to build on early wins, grow the customer base, and build the proof points that make a Seed round possible.
 
 ---
 
@@ -158,7 +161,7 @@ UPNY Ventures officially launches Fund I — a $5M pre-seed venture fund purpose
 
 **Key angles:**
 - Gap in the ecosystem: Upstate NY has world-class research infrastructure but no dedicated pre-seed commercialization vehicle
-- The GTM program: structured 3-phase program that turns incubated founders into Seed-ready companies
+- The GTM program: structured 4-phase program (free 2-week course → 100-Day Challenge → $25–50K pre-seed → $100K follow-on) that turns incubated founders into Seed-ready companies
 - Allan's background: 20 years in software startups, accelerator operator, deep roots in the NY ecosystem
 - The state opportunity: alignment with NY's investment in university research and economic development
 

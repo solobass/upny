@@ -65,34 +65,39 @@ We provide it.
 From incubated to Seed-ready.
 
 **Subhead:**
-A structured, three-phase commercialization program built for founders who know the technology and are learning the market. The goal at the end isn't just customers — it's a company that Seed and Series A investors will compete to back.
+A structured, four-phase commercialization program built for founders who know the technology and are learning the market. The goal at the end isn't just customers — it's a company that Seed and Series A investors will compete to back.
 
 ---
 
-**Phase I — Plan**
-*6–8 weeks*
+**Phase 1 — GTM Strategy Course**
+*2 weeks · Free to public*
 
-Every engagement starts with structure. Founders work through a focused GTM planning process — identifying their ideal customer profile, mapping priority verticals, sharpening their value proposition, and building the core workflows they'll use to execute. The goal at the end of Phase I is a clear, actionable plan and the commitment to work it.
+Every engagement starts with strategy. Open to all founders, this free 2-week course walks participants through the core GTM foundation: identifying their ideal customer profile, mapping priority verticals, sharpening their value proposition, and understanding the commercial workflows they'll need to execute. The goal: clarity on who the customer is and how to reach them.
 
-Participation is selective. Founders are scored on completion and quality. Not everyone advances. That's by design.
-
----
-
-**Phase II — Action**
-*90 days*
-
-This is where the plan becomes a company. Weekly execution sprints drive founders through expanding customer discovery, building outreach at scale, and testing their value proposition against real buyers. We use enrichment tools and repeatable workflows to move from a list of ten target customers to a hundred or more.
-
-By the end of Phase II, the goal is early validation: a letter of intent, a signed pilot, a paying early adopter. Proof that the market is responding. Founders are scored on their work throughout.
+Participation in Phase 2 is selective. Founders are evaluated on completion and quality. Not everyone advances. That's by design.
 
 ---
 
-**Phase III — Growth**
-*Pre-Seed Funding*
+**Phase 2 — 100-Day Challenge**
+*A GTM Commercialization Engine*
 
-The top performers from Phase I and II qualify for pre-seed funding consideration. Selection is based on scores and demonstrated traction.
+This is where strategy becomes a company. 100 days of structured execution — weekly sprints drive founders through expanding customer discovery, building outreach at scale, and testing their value proposition against real buyers. We use enrichment tools and repeatable workflows to move from a list of ten target customers to a hundred or more.
 
-This is the bridge — from university incubator to funded, growth-stage company, with the commercial proof points to raise a Seed round from the investors who were watching from the start.
+By the end of the 100-Day Challenge, the goal is early validation: a letter of intent, a signed pilot, a paying early adopter. Proof that the market is responding. Founders are scored on their work throughout.
+
+---
+
+**Phase 3 — Pre-Seed Investment**
+*$25–50K*
+
+The top performers from Phases 1 and 2 qualify for pre-seed funding consideration. Selection is based on scores and demonstrated commercial traction. This is the first institutional check — capital to move from validated market interest to early customers and revenue.
+
+---
+
+**Phase 4 — Pre-Seed Follow-on Investment**
+*$100K*
+
+Companies that deploy Phase 3 capital effectively and continue to demonstrate traction qualify for a follow-on pre-seed investment. This is the scaling check — capital to build on early wins, grow the customer base, and build the proof points that make a Seed round possible.
 
 ---
 

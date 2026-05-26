@@ -83,33 +83,41 @@ LABEL: GTM Program
 
 HEADLINE:
 From incubated to investable.
-In three phases.
+In four phases.
 
 ─────────────────────────────────────────────────
 
-PHASE I — Plan          [ 6–8 weeks ]
+PHASE 1 — GTM Strategy Course     [ 2 weeks · Free to public ]
 
-Founders build a structured GTM plan from the ground up: target customers,
-priority verticals, value proposition, and the core workflows needed to
-execute. Participation is selective — founders are scored on completion
-and quality. Not everyone advances.
-
-─────────────────────────────────────────────────
-
-PHASE II — Action       [ 90 days ]
-
-Weekly execution sprints. Founders implement the plan — expanding customer
-discovery, building pipeline, and testing their value proposition at scale.
-The goal: early validation outcomes. LOIs. Signed pilots. Proof that someone
-will pay.
+Open to all founders. Builds the GTM foundation: target customers, priority
+verticals, value proposition, and the execution workflows needed to go to
+market. Advancement to Phase 2 is selective — founders are evaluated on
+completion and quality. Not everyone advances.
 
 ─────────────────────────────────────────────────
 
-PHASE III — Growth      [ Pre-Seed ]
+PHASE 2 — 100-Day Challenge       [ GTM Commercialization Engine ]
 
-The top performers qualify for pre-seed funding consideration. Selection is
-based on scores from Phase I and II and demonstrated traction. This is the
-bridge from validated demand to a funded, growth-stage company.
+100 days of structured execution. Weekly sprints drive founders through
+customer discovery at scale, pipeline building, and value proposition testing
+against real buyers. The goal: early validation outcomes. LOIs. Signed pilots.
+Proof that someone will pay. Founders are scored throughout.
+
+─────────────────────────────────────────────────
+
+PHASE 3 — Pre-Seed Investment     [ $25–50K ]
+
+The top performers qualify for a first pre-seed check. Selection is based on
+scores and demonstrated commercial traction. Capital to move from validated
+market interest to early customers and revenue.
+
+─────────────────────────────────────────────────
+
+PHASE 4 — Pre-Seed Follow-on      [ $100K ]
+
+Companies that deploy Phase 3 capital effectively and demonstrate continued
+traction qualify for a $100K follow-on. The scaling check — builds toward
+a fundable Seed round.
 
 ─────────────────────────────────────────────────
 
