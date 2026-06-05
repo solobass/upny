@@ -105,7 +105,7 @@ Proof that someone will pay. Founders are scored throughout.
 
 ─────────────────────────────────────────────────
 
-PHASE 3 — Pre-Seed Investment     [ $25–50K ]
+PHASE 3 — Pre-Seed Investment     [ $50–100K ]
 
 The top performers qualify for a first pre-seed check. Selection is based on
 scores and demonstrated commercial traction. Capital to move from validated

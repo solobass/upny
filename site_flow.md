@@ -67,7 +67,7 @@ Phase 2 — 100-Day Challenge · GTM Commercialization Engine
 
 ---
 
-Phase 3 — Pre-Seed Investment · $25–50K
+Phase 3 — Pre-Seed Investment · $50–100K
 
 Top performers from Phases 1 and 2 qualify for a first pre-seed check. Selection based on scores and demonstrated commercial traction. Capital to move from validated interest to early customers and revenue.
 

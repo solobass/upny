@@ -88,7 +88,7 @@ By the end of the 100-Day Challenge, the goal is early validation: a letter of i
 ---
 
 **Phase 3 — Pre-Seed Investment**
-*$25–50K*
+*$50–100K*
 
 The top performers from Phases 1 and 2 qualify for pre-seed funding consideration. Selection is based on scores and demonstrated commercial traction. This is the first institutional check — capital to move from validated market interest to early customers and revenue.
 

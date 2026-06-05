@@ -96,7 +96,7 @@ Founders are scored on their work throughout.
 ---
 
 **[PHASE 3 — PRE-SEED INVESTMENT]**
-*$25–50K*
+*$50–100K*
 
 The top performers from Phases 1 and 2 qualify for pre-seed funding consideration. Selection is based on scores and demonstrated commercial traction. This is the first institutional check — capital to move from validated market interest to early customers and revenue.
 
@@ -161,7 +161,7 @@ UPNY Ventures officially launches Fund I — a $5M pre-seed venture fund purpose
 
 **Key angles:**
 - Gap in the ecosystem: Upstate NY has world-class research infrastructure but no dedicated pre-seed commercialization vehicle
-- The GTM program: structured 4-phase program (free 2-week course → 100-Day Challenge → $25–50K pre-seed → $100K follow-on) that turns incubated founders into Seed-ready companies
+- The GTM program: structured 4-phase program (free 2-week course → 100-Day Challenge → $50–100K pre-seed → $100K follow-on) that turns incubated founders into Seed-ready companies
 - Allan's background: 20 years in software startups, accelerator operator, deep roots in the NY ecosystem
 - The state opportunity: alignment with NY's investment in university research and economic development
 
