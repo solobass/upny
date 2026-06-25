@@ -556,7 +556,18 @@
     .journey-wrap {
       padding: 80px 40px;
       border-top: 1px solid #ddd0bb;
+      background:
+        linear-gradient(rgba(247, 243, 236, 0.78), rgba(247, 243, 236, 0.78)),
+        url('../assets/albany_background.jpg') center / cover no-repeat;
+    }
+
+    .journey-card {
       background: #ffffff;
+      border-radius: 4px;
+      padding: 56px 48px;
+      max-width: 900px;
+      margin: 0 auto;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.04);
     }
 
     .journey-phase-headers {
@@ -676,7 +687,8 @@
     }
 
     @media (max-width: 760px) {
-      .journey-wrap { padding: 48px 24px; }
+      .journey-wrap { padding: 32px 16px; }
+      .journey-card { padding: 36px 24px; }
       .journey-phase-headers { max-width: 100%; }
       .journey { max-width: 100%; }
       .journey-node,
@@ -822,6 +834,7 @@
 
   <!-- ── STARTUP JOURNEY DIAGRAM ── -->
   <div class="journey-wrap">
+    <div class="journey-card">
     <div class="journey-phase-headers">
       <div class="journey-phase-header">Research</div>
       <div class="journey-phase-header center">Commercialization</div>
@@ -871,6 +884,7 @@
       <div class="journey-node right">Strategic Acquisition</div>
 
     </div>
+    </div><!-- /.journey-card -->
   </div>
 
   <!-- ── RISK REDUCTION FRAMEWORK ── -->
