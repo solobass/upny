@@ -552,6 +552,106 @@
 
     .footer-back:hover { color: #ffffff; }
 
+    /* ── Startup Journey Diagram ── */
+    .journey-wrap {
+      padding: 80px 40px;
+      border-top: 1px solid #ddd0bb;
+      background: #f0efed;
+    }
+
+    .journey-phase-headers {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      max-width: 480px;
+      margin: 0 auto 40px;
+      text-align: center;
+    }
+
+    .journey-phase-header {
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #cc9966;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #ddd0bb;
+    }
+
+    .journey-phase-header.center { color: #111111; }
+
+    .journey {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .journey-connector {
+      width: 1px;
+      height: 28px;
+      background: #c8bfb0;
+    }
+
+    .journey-node {
+      background: #ffffff;
+      border: 1px solid #ddd0bb;
+      border-radius: 6px;
+      padding: 12px 24px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: #333333;
+      text-align: center;
+      letter-spacing: -0.01em;
+      width: 100%;
+    }
+
+    .journey-node-sub {
+      font-size: 0.7rem;
+      font-weight: 300;
+      color: #888888;
+      margin-top: 5px;
+      letter-spacing: 0;
+      line-height: 1.5;
+    }
+
+    .journey-node-upny {
+      background: #111111;
+      border-color: #111111;
+      color: #ffffff;
+    }
+
+    .journey-node-upny-secondary {
+      background: #ffffff;
+      border: 1px solid #111111;
+      color: #111111;
+    }
+
+    .journey-node-upny-secondary .journey-node-sub {
+      color: #111111;
+      font-weight: 400;
+    }
+
+    .journey-engine-banner {
+      width: 100%;
+      background: #111111;
+      color: #ffffff;
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 14px 20px;
+      border-radius: 4px;
+    }
+
+    @media (max-width: 640px) {
+      .journey-wrap { padding: 48px 24px; }
+      .journey-phase-headers { max-width: 100%; }
+      .journey { max-width: 100%; }
+    }
+
     /* ── Responsive ── */
     @media (max-width: 860px) {
       .why-grid { grid-template-columns: 1fr; }
@@ -615,6 +715,59 @@
       We use signals to identify, validate and fund revenue-driven startups emerging from NY State universities and incubators.
       <span class="highlight">Capital is deployed only after demonstrating real commercial traction.</span>
     </p>
+  </div>
+
+  <!-- ── STARTUP JOURNEY DIAGRAM ── -->
+  <div class="journey-wrap">
+    <div class="journey-phase-headers">
+      <div class="journey-phase-header">Research</div>
+      <div class="journey-phase-header center">Commercialization</div>
+      <div class="journey-phase-header">Growth</div>
+    </div>
+    <div class="journey">
+
+      <div class="journey-node">University</div>
+      <div class="journey-connector"></div>
+      <div class="journey-node">Scientific Discovery</div>
+      <div class="journey-connector"></div>
+      <div class="journey-node">Patent / IP</div>
+      <div class="journey-connector"></div>
+      <div class="journey-node">University Incubator / Accelerator</div>
+      <div class="journey-connector"></div>
+
+      <div class="journey-engine-banner">The UPNY Venture Commercialization Engine™</div>
+      <div class="journey-connector"></div>
+
+      <div class="journey-node">
+        Commercial Validation
+        <div class="journey-node-sub">Customer Discovery · Market Research · Positioning · GTM Strategy · LOIs · Pilots</div>
+      </div>
+      <div class="journey-connector"></div>
+
+      <div class="journey-node journey-node-upny">UPNY Pre-Seed Investment</div>
+      <div class="journey-connector"></div>
+
+      <div class="journey-node journey-node-upny-secondary">
+        Institutional Seed Round
+        <div class="journey-node-sub">+ UPNY Follow-on Investment</div>
+      </div>
+      <div class="journey-connector"></div>
+
+      <div class="journey-node">Revenue Growth &amp; Market Expansion</div>
+      <div class="journey-connector"></div>
+
+      <div class="journey-node journey-node-upny-secondary">
+        Series A
+        <div class="journey-node-sub">+ UPNY Fund II Follow-on Investment</div>
+      </div>
+      <div class="journey-connector"></div>
+
+      <div class="journey-node">Scaling</div>
+      <div class="journey-connector"></div>
+
+      <div class="journey-node">Strategic Acquisition</div>
+
+    </div>
   </div>
 
   <!-- ── THE GAP ── -->
