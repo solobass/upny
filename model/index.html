@@ -556,94 +556,100 @@
     .journey-wrap {
       padding: 80px 40px;
       border-top: 1px solid #ddd0bb;
-      background: #f0efed;
+      background: #ffffff;
     }
 
     .journey-phase-headers {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      max-width: 480px;
-      margin: 0 auto 40px;
+      max-width: 520px;
+      margin: 0 auto 48px;
       text-align: center;
+      border-bottom: 1px solid #ddd0bb;
+      padding-bottom: 16px;
     }
 
     .journey-phase-header {
-      font-size: 0.62rem;
+      font-size: 0.6rem;
       font-weight: 600;
-      letter-spacing: 0.16em;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: #cc9966;
-      padding-bottom: 12px;
-      border-bottom: 1px solid #ddd0bb;
+      color: #c8bfb0;
     }
 
-    .journey-phase-header.center { color: #111111; }
+    .journey-phase-header.center {
+      color: #cc9966;
+      letter-spacing: 0.2em;
+    }
 
     .journey {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 0;
-      max-width: 480px;
+      max-width: 520px;
       margin: 0 auto;
     }
 
     .journey-connector {
       width: 1px;
-      height: 28px;
-      background: #c8bfb0;
+      height: 32px;
+      background: linear-gradient(to bottom, #ddd0bb, #ddd0bb);
     }
 
     .journey-node {
-      background: #ffffff;
+      background: #faf9f7;
       border: 1px solid #ddd0bb;
-      border-radius: 6px;
-      padding: 12px 24px;
+      border-radius: 2px;
+      padding: 14px 28px;
       font-size: 0.82rem;
-      font-weight: 500;
-      color: #333333;
+      font-weight: 400;
+      color: #444444;
       text-align: center;
-      letter-spacing: -0.01em;
+      letter-spacing: 0.01em;
       width: 100%;
     }
 
     .journey-node-sub {
-      font-size: 0.7rem;
+      font-size: 0.68rem;
       font-weight: 300;
-      color: #888888;
+      color: #aaaaaa;
       margin-top: 5px;
-      letter-spacing: 0;
-      line-height: 1.5;
+      letter-spacing: 0.01em;
+      line-height: 1.6;
     }
 
     .journey-node-upny {
       background: #111111;
       border-color: #111111;
       color: #ffffff;
+      font-weight: 500;
+      letter-spacing: 0.02em;
     }
 
     .journey-node-upny-secondary {
-      background: #ffffff;
-      border: 1px solid #111111;
+      background: #faf9f7;
+      border: 1px solid #cc9966;
       color: #111111;
+      font-weight: 500;
     }
 
     .journey-node-upny-secondary .journey-node-sub {
-      color: #111111;
+      color: #cc9966;
       font-weight: 400;
     }
 
     .journey-engine-banner {
       width: 100%;
       background: #111111;
-      color: #ffffff;
-      font-size: 0.65rem;
+      color: #cc9966;
+      font-size: 0.58rem;
       font-weight: 600;
-      letter-spacing: 0.18em;
+      letter-spacing: 0.22em;
       text-transform: uppercase;
       text-align: center;
-      padding: 14px 20px;
-      border-radius: 4px;
+      padding: 16px 20px;
+      border-radius: 2px;
     }
 
     @media (max-width: 640px) {
