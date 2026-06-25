@@ -562,8 +562,8 @@
     .journey-phase-headers {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      max-width: 520px;
-      margin: 0 auto 48px;
+      max-width: 760px;
+      margin: 0 auto 52px;
       text-align: center;
       border-bottom: 1px solid #ddd0bb;
       padding-bottom: 16px;
@@ -582,33 +582,50 @@
       letter-spacing: 0.2em;
     }
 
+    /* ── Staggered journey ── */
     .journey {
+      position: relative;
+      max-width: 760px;
+      margin: 0 auto;
       display: flex;
       flex-direction: column;
-      align-items: center;
       gap: 0;
-      max-width: 520px;
-      margin: 0 auto;
+    }
+
+    /* continuous center spine */
+    .journey::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background: #ddd0bb;
+      transform: translateX(-50%);
     }
 
     .journey-connector {
-      width: 1px;
-      height: 32px;
-      background: linear-gradient(to bottom, #ddd0bb, #ddd0bb);
+      height: 24px;
+      width: 100%;
     }
 
     .journey-node {
+      position: relative;
+      width: 44%;
       background: #faf9f7;
       border: 1px solid #ddd0bb;
       border-radius: 2px;
-      padding: 14px 28px;
+      padding: 14px 20px;
       font-size: 0.82rem;
       font-weight: 400;
       color: #444444;
       text-align: center;
       letter-spacing: 0.01em;
-      width: 100%;
+      z-index: 1;
     }
+
+    .journey-node.left  { margin-left: 0; margin-right: auto; }
+    .journey-node.right { margin-left: auto; margin-right: 0; }
 
     .journey-node-sub {
       font-size: 0.68rem;
@@ -620,11 +637,15 @@
     }
 
     .journey-node-upny {
+      width: 54%;
+      margin-left: auto;
+      margin-right: auto;
       background: #111111;
       border-color: #111111;
       color: #ffffff;
       font-weight: 500;
       letter-spacing: 0.02em;
+      z-index: 1;
     }
 
     .journey-node-upny-secondary {
@@ -640,6 +661,7 @@
     }
 
     .journey-engine-banner {
+      position: relative;
       width: 100%;
       background: #111111;
       color: #cc9966;
@@ -650,12 +672,17 @@
       text-align: center;
       padding: 16px 20px;
       border-radius: 2px;
+      z-index: 1;
     }
 
-    @media (max-width: 640px) {
+    @media (max-width: 760px) {
       .journey-wrap { padding: 48px 24px; }
       .journey-phase-headers { max-width: 100%; }
       .journey { max-width: 100%; }
+      .journey-node,
+      .journey-node.left,
+      .journey-node.right { width: 80%; margin-left: auto; margin-right: auto; }
+      .journey-node-upny { width: 90%; }
     }
 
     /* ── Risk Reduction Framework ── */
@@ -802,19 +829,19 @@
     </div>
     <div class="journey">
 
-      <div class="journey-node">University</div>
+      <div class="journey-node left">University</div>
       <div class="journey-connector"></div>
-      <div class="journey-node">Scientific Discovery</div>
+      <div class="journey-node right">Scientific Discovery</div>
       <div class="journey-connector"></div>
-      <div class="journey-node">Patent / IP</div>
+      <div class="journey-node left">Patent / IP</div>
       <div class="journey-connector"></div>
-      <div class="journey-node">University Incubator / Accelerator</div>
+      <div class="journey-node right">University Incubator / Accelerator</div>
       <div class="journey-connector"></div>
 
       <div class="journey-engine-banner">The UPNY Venture Commercialization Engine™</div>
       <div class="journey-connector"></div>
 
-      <div class="journey-node">
+      <div class="journey-node left">
         Commercial Validation
         <div class="journey-node-sub">Customer Discovery · Market Research · Positioning · GTM Strategy · LOIs · Pilots</div>
       </div>
@@ -823,25 +850,25 @@
       <div class="journey-node journey-node-upny">UPNY Pre-Seed Investment</div>
       <div class="journey-connector"></div>
 
-      <div class="journey-node journey-node-upny-secondary">
+      <div class="journey-node journey-node-upny-secondary right">
         Institutional Seed Round
         <div class="journey-node-sub">+ UPNY Follow-on Investment</div>
       </div>
       <div class="journey-connector"></div>
 
-      <div class="journey-node">Revenue Growth &amp; Market Expansion</div>
+      <div class="journey-node left">Revenue Growth &amp; Market Expansion</div>
       <div class="journey-connector"></div>
 
-      <div class="journey-node journey-node-upny-secondary">
+      <div class="journey-node journey-node-upny-secondary right">
         Series A
         <div class="journey-node-sub">+ UPNY Fund II Follow-on Investment</div>
       </div>
       <div class="journey-connector"></div>
 
-      <div class="journey-node">Scaling</div>
+      <div class="journey-node left">Scaling</div>
       <div class="journey-connector"></div>
 
-      <div class="journey-node">Strategic Acquisition</div>
+      <div class="journey-node right">Strategic Acquisition</div>
 
     </div>
   </div>
