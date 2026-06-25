@@ -652,6 +652,77 @@
       .journey { max-width: 100%; }
     }
 
+    /* ── Risk Reduction Framework ── */
+    .risk-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+
+    .risk-table thead tr {
+      border-bottom: 2px solid #111111;
+    }
+
+    .risk-table th {
+      font-size: 0.62rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #888888;
+      padding: 0 16px 14px 0;
+      text-align: left;
+    }
+
+    .risk-table tbody tr {
+      border-bottom: 1px solid #ddd0bb;
+    }
+
+    .risk-table tbody tr:last-child {
+      border-bottom: none;
+    }
+
+    .risk-table td {
+      padding: 18px 16px 18px 0;
+      vertical-align: top;
+      font-weight: 300;
+      color: #444444;
+      line-height: 1.6;
+    }
+
+    .risk-table td:first-child {
+      font-weight: 500;
+      color: #111111;
+    }
+
+    .risk-table .risk-upny {
+      background: #f7f5f2;
+    }
+
+    .risk-table .risk-upny td {
+      padding-left: 16px;
+    }
+
+    .risk-table .risk-upny td:first-child {
+      color: #cc9966;
+    }
+
+    .risk-tag {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      background: #111111;
+      color: #ffffff;
+      padding: 3px 8px;
+      border-radius: 3px;
+    }
+
+    @media (max-width: 640px) {
+      .risk-table { font-size: 0.8rem; }
+      .risk-table th, .risk-table td { padding-right: 10px; }
+    }
+
     /* ── Responsive ── */
     @media (max-width: 860px) {
       .why-grid { grid-template-columns: 1fr; }
@@ -711,9 +782,8 @@
     <p class="page-label">Investment Model</p>
     <h1 class="page-title">A Commercialization Engine.<br />Not a Passive Fund.</h1>
     <p class="page-intro">
-      UPNY Ventures operates as a structured venture creation platform by embedding a GTM Engine directly into the investment process.
-      We use signals to identify, validate and fund revenue-driven startups emerging from NY State universities and incubators.
-      <span class="highlight">Capital is deployed only after demonstrating real commercial traction.</span>
+      UPNY Ventures is a commercialization platform with integrated venture capital. We bridge the gap between university research and venture-scale companies by systematically reducing commercial risk through a structured, repeatable operating system.
+      <span class="highlight">We are not simply selecting startups — we are building commercially successful companies.</span>
     </p>
   </div>
 
@@ -770,12 +840,73 @@
     </div>
   </div>
 
+  <!-- ── RISK REDUCTION FRAMEWORK ── -->
+  <section class="section">
+    <div class="inner">
+      <p class="section-label">Risk Reduction Framework</p>
+      <p class="section-intro">
+        Each stage of the commercialization journey eliminates a distinct category of risk. UPNY's role is to systematically remove commercial risk — the gap that traditional venture capital cannot address before writing a check.
+      </p>
+      <table class="risk-table">
+        <thead>
+          <tr>
+            <th>Stage</th>
+            <th>Primary Organization</th>
+            <th>Risk Reduced</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>University Research</td>
+            <td>University</td>
+            <td>Technical Risk</td>
+          </tr>
+          <tr>
+            <td>Patent / IP</td>
+            <td>University + Founder</td>
+            <td>Intellectual Property Risk</td>
+          </tr>
+          <tr>
+            <td>Incubator / Accelerator</td>
+            <td>University / NYS Ecosystem</td>
+            <td>Company Formation Risk</td>
+          </tr>
+          <tr class="risk-upny">
+            <td>The UPNY Venture Commercialization Engine™ <span class="risk-tag">UPNY</span></td>
+            <td>UPNY Ventures</td>
+            <td>Commercial Risk</td>
+          </tr>
+          <tr class="risk-upny">
+            <td>UPNY Pre-Seed Investment <span class="risk-tag">UPNY</span></td>
+            <td>UPNY Fund I</td>
+            <td>Early Execution Risk</td>
+          </tr>
+          <tr class="risk-upny">
+            <td>Institutional Seed + UPNY Follow-on <span class="risk-tag">UPNY</span></td>
+            <td>Seed Investors + UPNY</td>
+            <td>Market Validation Risk</td>
+          </tr>
+          <tr class="risk-upny">
+            <td>Series A + UPNY Fund II <span class="risk-tag">UPNY</span></td>
+            <td>Institutional VC + UPNY</td>
+            <td>Scaling Risk</td>
+          </tr>
+          <tr>
+            <td>Strategic Acquisition</td>
+            <td>Strategic Buyer</td>
+            <td>Liquidity Event</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
   <!-- ── THE GAP ── -->
   <section class="section section-bg" style="border-top: none;">
     <div class="inner">
       <p class="section-label">The Problem</p>
       <p class="section-intro">
-        Most tech companies do not develop into a product because no one built the infrastructure to move it forward. The gap from research solution to launching an investable company is structural. A 'solution in search of a problem' must pivot their research to 'a customer seeking a solution'.
+        Universities excel at creating breakthrough technologies. Incubators help founders form companies. But the gap between incubation and institutional investment is where most university technologies fail to reach commercial scale. The bottleneck isn't the science — it's the go-to-market. A 'solution in search of a problem' must become 'a customer seeking a solution.'
       </p>
       <div class="criteria">
 
@@ -783,7 +914,7 @@
           <div class="criterion-number">01</div>
           <div>
             <div class="criterion-title">The Translation Gap</div>
-            <div class="criterion-body">Tech founders emerge from years of technical development with minimal exposure to commercial markets, customer discovery, or sales infrastructure. The skills required to build breakthrough technology differ from those to generate revenue. Our goal is to provide a strategy and introduction to a network of experienced advisors to bridge the gap.</div>
+            <div class="criterion-body">PhD researchers, scientists, and engineers emerge from years of technical development with minimal exposure to commercial markets, customer discovery, or sales infrastructure. The skills required to build breakthrough technology differ fundamentally from those required to generate revenue. UPNY's commercialization platform is built specifically to bridge that gap.</div>
           </div>
         </div>
 
@@ -999,7 +1130,7 @@
     <div class="inner">
       <p class="section-label">Long-Term Vision</p>
       <p class="section-intro">
-        UPNY's path to a successful fund is built on validating tech NYS startups with early-customer traction and then deploying capital to scale.
+        The commercialization platform creates better companies. The venture funds capture the value created by that platform.
       </p>
       <div class="vision-grid">
 
@@ -1018,7 +1149,7 @@
         <div>
           <div class="vision-number">Vision 03</div>
           <div class="vision-title">A Replicable Regional Model</div>
-          <div class="vision-body">The UPNY thesis has the potential to scale innovation regionally and can be applied to research outside of the scope of tech in future funds.</div>
+          <div class="vision-body">Fund I focuses on Pre-Seed and early commercialization. Fund II provides follow-on capital through Seed and Series A. Over time, the platform becomes a repeatable engine that consistently transforms university research into commercially valuable companies capable of institutional financing and strategic acquisition.</div>
         </div>
 
       </div>
