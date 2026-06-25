@@ -593,7 +593,7 @@
       letter-spacing: 0.2em;
     }
 
-    /* ── Staggered journey ── */
+    /* ── Staggered roadmap ── */
     .journey {
       position: relative;
       max-width: 760px;
@@ -613,13 +613,16 @@
       width: 1px;
       background: #ddd0bb;
       transform: translateX(-50%);
+      z-index: 0;
     }
 
+    /* spacer between nodes */
     .journey-connector {
-      height: 24px;
+      height: 28px;
       width: 100%;
     }
 
+    /* Base node */
     .journey-node {
       position: relative;
       width: 44%;
@@ -633,10 +636,35 @@
       text-align: center;
       letter-spacing: 0.01em;
       z-index: 1;
+      overflow: visible;
     }
 
     .journey-node.left  { margin-left: 0; margin-right: auto; }
     .journey-node.right { margin-left: auto; margin-right: 0; }
+
+    /* Horizontal arm: left node → center spine */
+    .journey-node.left::after {
+      content: '';
+      position: absolute;
+      right: -14%;
+      top: 50%;
+      width: 14%;
+      height: 1px;
+      background: #ddd0bb;
+      transform: translateY(-50%);
+    }
+
+    /* Horizontal arm: right node → center spine */
+    .journey-node.right::before {
+      content: '';
+      position: absolute;
+      left: -14%;
+      top: 50%;
+      width: 14%;
+      height: 1px;
+      background: #ddd0bb;
+      transform: translateY(-50%);
+    }
 
     .journey-node-sub {
       font-size: 0.68rem;
@@ -647,8 +675,9 @@
       line-height: 1.6;
     }
 
+    /* UPNY Pre-Seed: centered, full-accent */
     .journey-node-upny {
-      width: 54%;
+      width: 52%;
       margin-left: auto;
       margin-right: auto;
       background: #111111;
@@ -659,6 +688,11 @@
       z-index: 1;
     }
 
+    /* No arms on centered nodes */
+    .journey-node-upny::before,
+    .journey-node-upny::after { display: none; }
+
+    /* UPNY secondary (gold border) */
     .journey-node-upny-secondary {
       background: #faf9f7;
       border: 1px solid #cc9966;
@@ -671,6 +705,7 @@
       font-weight: 400;
     }
 
+    /* Engine banner — full width, no arms */
     .journey-engine-banner {
       position: relative;
       width: 100%;
@@ -693,7 +728,13 @@
       .journey { max-width: 100%; }
       .journey-node,
       .journey-node.left,
-      .journey-node.right { width: 80%; margin-left: auto; margin-right: auto; }
+      .journey-node.right {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .journey-node.left::after,
+      .journey-node.right::before { display: none; }
       .journey-node-upny { width: 90%; }
     }
 
@@ -848,7 +889,7 @@
       <div class="journey-connector"></div>
       <div class="journey-node left">Patent / IP</div>
       <div class="journey-connector"></div>
-      <div class="journey-node right">University Incubator / Accelerator</div>
+      <div class="journey-node right">Lab / Incubator / Accelerator</div>
       <div class="journey-connector"></div>
 
       <div class="journey-engine-banner">The UPNY Venture Commercialization Engine™</div>
