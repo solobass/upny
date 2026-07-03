@@ -134,12 +134,116 @@
       z-index: 1;
     }
 
+    /* ── Site Nav ── */
+    body {
+      padding-top: 64px;
+    }
+
+    .site-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 0 32px;
+      background: #ffffff;
+      border-bottom: 1px solid #ddd0bb;
+    }
+
+    .nav-links {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .nav-link {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #444444;
+      text-decoration: none;
+      padding: 4px 0;
+      transition: color 0.2s;
+      white-space: nowrap;
+    }
+
+    .nav-link:hover {
+      color: #111111;
+    }
+
+    .nav-link.active {
+      color: #111111;
+    }
+
+    .nav-indicator {
+      position: absolute;
+      bottom: 0;
+      height: 2px;
+      background: #cc9966;
+      transition: left 0.25s ease, width 0.25s ease;
+      opacity: 0;
+    }
+
+    .nav-cta-group {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      flex-shrink: 0;
+    }
+
+    .nav-cta-link {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #cc9966;
+      text-decoration: none;
+      border-bottom: 2px solid #cc9966;
+      padding-bottom: 2px;
+      transition: opacity 0.2s;
+      white-space: nowrap;
+    }
+
+    .nav-cta-link:hover {
+      opacity: 0.5;
+    }
+
+    .nav-cta-btn {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #ffffff;
+      background: #111111;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 4px;
+      transition: opacity 0.2s;
+      white-space: nowrap;
+    }
+
+    .nav-cta-btn:hover {
+      opacity: 0.8;
+    }
+
+    #mission, #gap, #invest, #about {
+      scroll-margin-top: 64px;
+    }
+
     /* ── Hero ── */
     #landing {
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
+      min-height: calc(100vh - 64px);
       padding: 48px 24px;
     }
 
@@ -712,9 +816,41 @@
         width: 100%;
         height: 280px;
       }
+
+      /* Nav */
+      .site-nav {
+        padding: 0 20px;
+        gap: 16px;
+      }
+      .nav-links {
+        gap: 18px;
+      }
+      .nav-cta-group {
+        gap: 14px;
+      }
+      .nav-cta-link {
+        display: none;
+      }
     }
 
     @media (max-width: 640px) {
+      /* Nav */
+      .site-nav {
+        gap: 10px;
+        padding: 0 16px;
+      }
+      .nav-links {
+        gap: 12px;
+      }
+      .nav-link {
+        font-size: 0.62rem;
+        letter-spacing: 0.06em;
+      }
+      .nav-cta-btn {
+        font-size: 0.62rem;
+        padding: 8px 12px;
+      }
+
       /* Shared */
       .section {
         padding: 56px 20px;
@@ -800,6 +936,21 @@
   </style>
 </head>
 <body>
+
+  <!-- ── NAV ── -->
+  <nav class="site-nav">
+    <div class="nav-links">
+      <a href="#mission" class="nav-link">Mission</a>
+      <a href="#gap" class="nav-link">The Gap</a>
+      <a href="#invest" class="nav-link">The Engine</a>
+      <a href="#about" class="nav-link">Team</a>
+      <span class="nav-indicator"></span>
+    </div>
+    <div class="nav-cta-group">
+      <a href="model/" class="nav-cta-link">See the Model</a>
+      <a href="get-funded/" class="nav-cta-btn">Get Funded →</a>
+    </div>
+  </nav>
 
   <!-- ── LANDING ── -->
   <section id="landing" style="background-color: #ffffff; background-image: url('assets/hero_pattern.svg'); background-size: 100% 100%; background-repeat: no-repeat; background-position: center;">
@@ -958,7 +1109,7 @@
   <!-- ── INVEST ── -->
   <section id="invest" class="section section-bg">
     <div class="inner" style="max-width: 1100px;">
-      <p class="section-label">Invest</p>
+      <p class="section-label">The Engine</p>
       <div class="invest-header" style="background: #ffffff; border-radius: 12px; padding: 28px 36px; margin-bottom: 64px;">
         <h2 class="invest-title">$5M Fund Target = 100+ Activated Startups &amp; 30+ Investments</h2>
         <div style="margin-top: 20px;">
@@ -966,28 +1117,8 @@
         </div>
         <p class="disclaimer">Investment in UPNY Ventures Fund I is available to accredited investors only, as defined under SEC Rule 501(a). This is not an offer to sell or a solicitation of an offer to buy securities.</p>
       </div>
-      <div class="invest-cols">
-        <div class="invest-col">
-          <div class="invest-col-title">Angel</div>
-          <div class="invest-col-body">
-            <span class="invest-who">Individual investors seeking early-stage access to university-developed technology companies validated through a structured commercialization process.</span>
-            We target investments of $10K–$50K alongside experienced operators and advisors who contribute mentorship, guidance, and strategic support within portfolio companies. Our goal is to strengthen the entrepreneurial ecosystem through active participation and founder development.
-          </div>
-        </div>
-        <div class="invest-col">
-          <div class="invest-col-title">Institutional</div>
-          <div class="invest-col-body">
-            <span class="invest-who">Family offices and institutional LPs seeking exposure to a structured pre-seed investment vehicle where capital is deployed only after commercial risk has been systematically reduced.</span>
-            Our approach is to establish validation through a growing network of angels, founders, and statewide partnerships that create the foundation for long-term institutional participation and scalable fund growth.
-          </div>
-        </div>
-        <div class="invest-col">
-          <div class="invest-col-title">Partnerships</div>
-          <div class="invest-col-body">
-            <span class="invest-who">New York State programs and economic development organizations focused on translating publicly funded research into commercially scalable companies and regional economic growth.</span>
-            We're actively looking to foster aligned partnerships that support entrepreneurship, accelerate innovation, and strengthen the long-term startup infrastructure across Upstate.
-          </div>
-        </div>
+      <div class="invest-cols" style="display: block;">
+        <img src="assets/funnel.png" alt="From innovation to impact: university labs, incubators, and accelerators feed into UPNY's GTM engine, validation and velocity, top performers backed by UPNY, through to seed." style="width: 100%; height: auto; display: block; border-radius: 10px;" />
       </div>
     </div>
   </section>
@@ -1061,6 +1192,54 @@
     </div>
 
   </section>
+
+  <script>
+    (function () {
+      var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav-link'));
+      var indicator = document.querySelector('.nav-indicator');
+      var navLinksContainer = document.querySelector('.nav-links');
+      var sections = navLinks
+        .map(function (link) {
+          return document.getElementById(link.getAttribute('href').slice(1));
+        })
+        .filter(Boolean);
+
+      function setActive(link) {
+        navLinks.forEach(function (l) { l.classList.remove('active'); });
+        if (!link) {
+          indicator.style.opacity = '0';
+          return;
+        }
+        link.classList.add('active');
+        var containerRect = navLinksContainer.getBoundingClientRect();
+        var linkRect = link.getBoundingClientRect();
+        indicator.style.opacity = '1';
+        indicator.style.left = (linkRect.left - containerRect.left) + 'px';
+        indicator.style.width = linkRect.width + 'px';
+      }
+
+      var observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              var link = navLinks.filter(function (l) {
+                return l.getAttribute('href') === '#' + entry.target.id;
+              })[0];
+              setActive(link);
+            }
+          });
+        },
+        { rootMargin: '-45% 0px -50% 0px', threshold: 0 }
+      );
+
+      sections.forEach(function (section) { observer.observe(section); });
+
+      window.addEventListener('resize', function () {
+        var activeLink = navLinks.filter(function (l) { return l.classList.contains('active'); })[0];
+        if (activeLink) setActive(activeLink);
+      });
+    })();
+  </script>
 
 </body>
 </html>
