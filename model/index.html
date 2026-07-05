@@ -95,102 +95,6 @@
 
     .nav-back:hover { color: #111111; }
 
-    /* ── Scroll Spine ── */
-    .scroll-spine {
-      display: none;
-      position: fixed;
-      top: 50%;
-      transform: translateY(-50%);
-      flex-direction: column;
-      z-index: 500;
-    }
-
-    .scroll-spine.is-ready {
-      display: flex;
-    }
-
-    @media (max-width: 1100px) {
-      .scroll-spine.is-ready {
-        display: none;
-      }
-    }
-
-    .spine-line {
-      position: absolute;
-      left: 15px;
-      top: 2px;
-      bottom: 2px;
-      width: 1.5px;
-      background: #c9b79a;
-    }
-
-    .spine-item {
-      position: relative;
-      display: flex;
-      align-items: center;
-      height: 52px;
-    }
-
-    .spine-marker-zone {
-      position: relative;
-      width: 32px;
-      height: 32px;
-      flex-shrink: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .spine-dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: #f7f3ec;
-      border: 1.5px solid #c9b79a;
-      transition: width 0.4s ease, height 0.4s ease, background 0.4s ease, border-color 0.4s ease, border-width 0.4s ease, box-shadow 0.4s ease;
-    }
-
-    .spine-item.active .spine-dot {
-      width: 30px;
-      height: 30px;
-      background: #faf7f2;
-      border: 2px solid #cc9966;
-      box-shadow: 0 0 0 6px rgba(204, 153, 102, 0.14);
-    }
-
-    /* Single shared label that tracks beneath the active dot, rather than
-       one per stage — keeps the rail's footprint narrow enough to clear
-       the content column on common laptop widths (~1440-1512px). */
-    .spine-label-wrap {
-      position: absolute;
-      left: 0;
-      width: 150px;
-      opacity: 0;
-      transition: opacity 0.4s ease, top 0.4s ease;
-      pointer-events: none;
-    }
-
-    .spine-label-wrap.visible {
-      opacity: 1;
-    }
-
-    .spine-label {
-      font-size: 1.05rem;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: #111111;
-      margin-bottom: 4px;
-      line-height: 1.2;
-    }
-
-    .spine-phrase {
-      font-size: 0.72rem;
-      font-weight: 400;
-      line-height: 1.5;
-      color: #888888;
-    }
-
     /* ── Header ── */
     .page-header {
       padding: 40px 40px 32px;
@@ -442,30 +346,6 @@
     <a href="../" class="nav-back">← Back to UPNY.vc</a>
   </nav>
 
-  <!-- ── SCROLL SPINE ── -->
-  <nav class="scroll-spine" aria-label="Page progress">
-    <div class="spine-line"></div>
-    <div class="spine-item" data-target="story-model" data-label="Model" data-phrase="Reduce risk before capital.">
-      <div class="spine-marker-zone"><div class="spine-dot"></div></div>
-    </div>
-    <div class="spine-item" data-target="story-gap" data-label="Gap" data-phrase="Commercialization is the bottleneck.">
-      <div class="spine-marker-zone"><div class="spine-dot"></div></div>
-    </div>
-    <div class="spine-item" data-target="story-validate" data-label="Validate" data-phrase="Build evidence in market.">
-      <div class="spine-marker-zone"><div class="spine-dot"></div></div>
-    </div>
-    <div class="spine-item" data-target="story-invest" data-label="Invest" data-phrase="Capital follows evidence.">
-      <div class="spine-marker-zone"><div class="spine-dot"></div></div>
-    </div>
-    <div class="spine-item" data-target="story-grow" data-label="Grow" data-phrase="Follow traction to Seed and beyond.">
-      <div class="spine-marker-zone"><div class="spine-dot"></div></div>
-    </div>
-    <div class="spine-label-wrap">
-      <div class="spine-label"></div>
-      <div class="spine-phrase"></div>
-    </div>
-  </nav>
-
   <!-- ── PAGE HEADER ── -->
   <div class="page-header">
     <p class="page-label">Investment Model</p>
@@ -476,35 +356,35 @@
   </div>
 
   <!-- ── RISK ── -->
-  <section class="section" id="story-model">
+  <section class="section">
     <div class="inner">
       <img src="/assets/risk.png" alt="UPNY Ventures investment model showing the progression from research to commercialization, investment, and growth, with risk changing from technical risk to commercial risk, execution risk, and scaling risk." class="platform-works-image" />
     </div>
   </section>
 
   <!-- ── THE PROBLEM ── -->
-  <section class="section" id="story-gap">
+  <section class="section">
     <div class="inner">
       <img src="/assets/theproblem.png" alt="UPNY Ventures Problem section showing the translation gap between technical expertise and markets, the timing gap between incubation and Seed investment, and the selection gap between pitch quality and real market evidence." class="platform-works-image" />
     </div>
   </section>
 
   <!-- ── HOW THE PLATFORM WORKS ── -->
-  <section class="section" id="story-validate">
+  <section class="section">
     <div class="inner">
       <img src="/assets/howtheplatformworks.png" alt="UPNY Ventures commercialization and investment selection engine showing 100+ startups evaluated, approximately 30 companies advanced, 5 to 10 companies funded, a $100K follow-on check, and a repeatable cohort pipeline." class="platform-works-image" />
     </div>
   </section>
 
   <!-- ── OUR PLATFORM ── -->
-  <section class="section section-bg" id="story-invest">
+  <section class="section section-bg">
     <div class="inner">
       <img src="/assets/ourplatform.png" alt="UPNY Ventures platform and investment principles showing customer discovery, GTM strategy and execution, pilot development, LOIs and early contracts, investor readiness, selective investment, and evidence-driven capital allocation." class="platform-works-image" />
     </div>
   </section>
 
   <!-- ── WHY INVEST ── -->
-  <section class="section section-bg" id="story-grow">
+  <section class="section section-bg">
     <div class="inner">
       <img src="/assets/whyinvest.png" alt="Why LPs invest with UPNY Ventures, showing Fund I pre-seed commercialization, Fund II Seed and Series A follow-on strategy, and fit for angel investors, family offices, institutional LPs, and strategic partners." class="platform-works-image" />
     </div>
@@ -527,74 +407,6 @@
     <span class="footer-copy">© 2026 UPNY Ventures · New York</span>
     <a href="../" class="footer-back">← Back to UPNY.vc</a>
   </footer>
-
-  <script>
-    (function () {
-      var spine = document.querySelector('.scroll-spine');
-      var spineItems = Array.prototype.slice.call(document.querySelectorAll('.spine-item'));
-      if (!spine || !spineItems.length) return;
-
-      var targets = spineItems.map(function (item) {
-        return { item: item, el: document.getElementById(item.getAttribute('data-target')) };
-      }).filter(function (t) { return t.el; });
-
-      var labelWrap = spine.querySelector('.spine-label-wrap');
-      var labelEl = spine.querySelector('.spine-label');
-      var phraseEl = spine.querySelector('.spine-phrase');
-
-      function setActive(id) {
-        var activeT = null;
-        targets.forEach(function (t) {
-          var isActive = t.el.id === id;
-          t.item.classList.toggle('active', isActive);
-          if (isActive) activeT = t;
-        });
-        if (activeT && labelWrap) {
-          labelEl.textContent = activeT.item.getAttribute('data-label');
-          phraseEl.textContent = activeT.item.getAttribute('data-phrase');
-          labelWrap.style.top = (activeT.item.offsetTop + 50) + 'px';
-          labelWrap.classList.add('visible');
-        }
-      }
-
-      // Default to the first stage until the observer confirms a section.
-      if (targets.length) setActive(targets[0].el.id);
-
-      var observer = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) setActive(entry.target.id);
-        });
-      }, { rootMargin: '-40% 0px -40% 0px', threshold: 0 });
-
-      targets.forEach(function (t) { observer.observe(t.el); });
-
-      // Position the rail relative to the page's own centered content column
-      // rather than a fixed viewport offset, and hide it if there isn't room.
-      // Kept deliberately narrow (label sits below the active dot, not
-      // beside it) so it can clear the content column on common laptop
-      // widths (~1440-1512px), not just very wide monitors.
-      var CONTENT_GAP = 24;
-      var SPINE_WIDTH = 150;
-      var MIN_EDGE_MARGIN = 20;
-      var referenceInner = document.querySelector('#story-model .inner') || document.querySelector('.inner');
-
-      function positionSpine() {
-        if (!referenceInner) return;
-        var innerLeft = referenceInner.getBoundingClientRect().left;
-        var desiredLeft = innerLeft - CONTENT_GAP - SPINE_WIDTH;
-        if (desiredLeft < MIN_EDGE_MARGIN) {
-          spine.classList.remove('is-ready');
-        } else {
-          spine.style.left = desiredLeft + 'px';
-          spine.classList.add('is-ready');
-        }
-      }
-
-      window.addEventListener('resize', positionSpine);
-      window.addEventListener('load', positionSpine);
-      positionSpine();
-    })();
-  </script>
 
 </body>
 </html>
