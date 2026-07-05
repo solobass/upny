@@ -219,64 +219,110 @@
       display: block;
     }
 
-    /* ── Investor CTA ── */
-    .apply-section {
-      padding: 48px 40px;
+    /* ── Investor CTA / Closing ── */
+    .closing-section {
+      position: relative;
+      overflow: hidden;
       background: #111111;
-      text-align: center;
+      padding: 140px 40px;
     }
 
-    .apply-card {
-      background: #ffffff;
-      border-radius: 12px;
-      padding: 64px 48px;
-      max-width: 700px;
-      margin: 0 auto;
+    .closing-inner {
+      position: relative;
+      z-index: 1;
     }
 
-    .apply-title {
-      font-size: 0.9rem;
-      font-weight: 600;
-      letter-spacing: 0.14em;
+    .closing-content {
+      max-width: 760px;
+    }
+
+    .closing-headline {
+      font-size: clamp(1.9rem, 5vw, 3.6rem);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      line-height: 1.15;
       text-transform: uppercase;
+      color: #f7f3ec;
+      margin-bottom: 32px;
+    }
+
+    .closing-headline .gold {
       color: #cc9966;
-      margin-bottom: 20px;
     }
 
-    .apply-sub {
-      font-size: 0.95rem;
+    .closing-body {
+      font-size: clamp(0.95rem, 1.6vw, 1.1rem);
       font-weight: 300;
-      color: #666666;
-      margin-bottom: 48px;
       line-height: 1.7;
+      color: #f7f3ec;
+      max-width: 560px;
+      margin-bottom: 28px;
     }
 
-    .apply-btn {
+    .closing-join {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #cc9966;
+      margin-bottom: 32px;
+    }
+
+    .closing-btn {
       display: inline-block;
-      background: #111111;
-      color: #ffffff;
+      background: #cc9966;
+      color: #111111;
       font-size: 0.85rem;
-      font-weight: 500;
+      font-weight: 600;
       letter-spacing: 0.08em;
       text-transform: uppercase;
       text-decoration: none;
-      padding: 16px 40px;
+      padding: 18px 36px;
       border-radius: 4px;
       transition: opacity 0.2s;
     }
 
-    .apply-btn:hover { opacity: 0.75; }
+    .closing-btn:hover { opacity: 0.82; }
 
-    a.apply-li-link,
-    a.apply-li-link:visited {
-      color: #cc9966 !important;
-      font-weight: 500;
-      text-decoration: none;
-      border-bottom: 1px solid #cc9966;
-      transition: opacity 0.2s;
+    .closing-meta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 0.8rem;
+      font-weight: 400;
+      color: rgba(247, 243, 236, 0.55);
+      margin-top: 40px;
     }
 
-    a.apply-li-link:hover { opacity: 0.65; }
+    .closing-meta::before {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 1px;
+      background: rgba(247, 243, 236, 0.4);
+      flex-shrink: 0;
+    }
+
+    /* Restrained decorative geometry — arc + dot field, right side only */
+    .closing-arc {
+      position: absolute;
+      right: -320px;
+      bottom: -420px;
+      width: 900px;
+      height: 900px;
+      border-radius: 50%;
+      border: 1px solid rgba(204, 153, 102, 0.5);
+      z-index: 0;
+    }
+
+    .closing-dots {
+      position: absolute;
+      right: 90px;
+      bottom: 60px;
+      width: 260px;
+      height: 220px;
+      background-image: radial-gradient(rgba(204, 153, 102, 0.55) 1px, transparent 1.5px);
+      background-size: 20px 20px;
+      z-index: 0;
+    }
 
     /* ── Footer ── */
     .footer {
@@ -314,6 +360,10 @@
       .why-item { padding: 28px 0; border-left: none !important; }
       .why-item:nth-last-child(-n+2) { border-bottom: 1px solid #ddd0bb; }
       .why-item:last-child { border-bottom: none; }
+
+      .closing-section { padding: 100px 40px; }
+      .closing-arc { width: 700px; height: 700px; right: -280px; bottom: -340px; }
+      .closing-dots { right: 50px; bottom: 40px; width: 200px; height: 170px; }
     }
 
     @media (max-width: 640px) {
@@ -326,9 +376,12 @@
       .section-label { margin-bottom: 28px; }
       .section-intro { font-size: 0.9rem; margin-bottom: 36px; }
 
-      .apply-section { padding: 40px 24px; }
-      .apply-card { padding: 36px 24px; }
-      .apply-sub { font-size: 0.875rem; }
+      .closing-section { padding: 64px 24px; }
+      .closing-body { max-width: 100%; }
+      .closing-btn { display: block; text-align: center; }
+      .closing-meta { flex-wrap: wrap; }
+      .closing-arc,
+      .closing-dots { display: none; }
 
       .footer { padding: 28px 24px; }
       .footer-copy { font-size: 0.65rem; }
@@ -391,15 +444,22 @@
     </div>
   </section>
 
-  <!-- ── INVESTOR CTA ── -->
-  <section class="apply-section">
-    <div class="apply-card">
-      <h2 class="apply-title">Investor Inquiries</h2>
-      <p class="apply-sub">
-        We are building Fund I and meeting selectively with LPs aligned to our thesis.<br /><br />
-        Follow <a href="https://www.linkedin.com/company/upny" target="_blank" class="apply-li-link">UPNY</a> for fund announcements and updates.
-      </p>
-      <a href="mailto:info@upny.vc" class="apply-btn">Get In Touch</a>
+  <!-- ── INVESTOR CTA / CLOSING ── -->
+  <section class="closing-section">
+    <div class="closing-arc" aria-hidden="true"></div>
+    <div class="closing-dots" aria-hidden="true"></div>
+    <div class="inner closing-inner">
+      <div class="closing-content">
+        <h2 class="closing-headline">
+          The Next Generation<br />
+          Of New York Technology<br />
+          Is <span class="gold">Already Being Built.</span>
+        </h2>
+        <p class="closing-body">We are building the commercialization engine and investment platform to help more of it reach the market.</p>
+        <p class="closing-join">Join us.</p>
+        <a href="mailto:info@upny.vc" class="closing-btn">Invest with UPNY →</a>
+        <p class="closing-meta">Fund I&nbsp;&nbsp;•&nbsp;&nbsp;Pre-Seed Technology&nbsp;&nbsp;•&nbsp;&nbsp;Upstate New York</p>
+      </div>
     </div>
   </section>
 
