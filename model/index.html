@@ -95,6 +95,87 @@
 
     .nav-back:hover { color: #111111; }
 
+    /* ── Scroll Spine ── */
+    .scroll-spine {
+      display: none;
+      position: fixed;
+      left: 28px;
+      top: 50%;
+      transform: translateY(-50%);
+      flex-direction: column;
+      z-index: 500;
+    }
+
+    .spine-line {
+      position: absolute;
+      left: 3px;
+      top: 4px;
+      bottom: 4px;
+      width: 1px;
+      background: #ddd0bb;
+    }
+
+    .spine-item {
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      min-height: 52px;
+    }
+
+    .spine-dot {
+      position: relative;
+      z-index: 1;
+      flex-shrink: 0;
+      width: 8px;
+      height: 8px;
+      margin-top: 2px;
+      border-radius: 50%;
+      background: #f7f3ec;
+      border: 1px solid #ddd0bb;
+      transition: background 0.4s ease, border-color 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .spine-item.active .spine-dot {
+      background: #cc9966;
+      border-color: #cc9966;
+      transform: scale(1.5);
+      box-shadow: 0 0 0 4px rgba(204, 153, 102, 0.15);
+    }
+
+    .spine-label-wrap {
+      width: 130px;
+      margin-left: 14px;
+      opacity: 0;
+      transform: translateX(-4px);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+      pointer-events: none;
+    }
+
+    .spine-item.active .spine-label-wrap {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .spine-label {
+      font-size: 0.6rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #111111;
+      margin-bottom: 3px;
+    }
+
+    .spine-phrase {
+      font-size: 0.65rem;
+      font-weight: 300;
+      line-height: 1.4;
+      color: #999999;
+    }
+
+    @media (min-width: 1440px) {
+      .scroll-spine { display: flex; }
+    }
+
     /* ── Header ── */
     .page-header {
       padding: 40px 40px 32px;
@@ -346,8 +427,55 @@
     <a href="../" class="nav-back">← Back to UPNY.vc</a>
   </nav>
 
+  <!-- ── SCROLL SPINE ── -->
+  <nav class="scroll-spine" aria-label="Page progress">
+    <div class="spine-line"></div>
+    <div class="spine-item" data-target="story-model">
+      <div class="spine-dot"></div>
+      <div class="spine-label-wrap">
+        <div class="spine-label">Model</div>
+        <div class="spine-phrase">Reduce risk before capital.</div>
+      </div>
+    </div>
+    <div class="spine-item" data-target="story-problem">
+      <div class="spine-dot"></div>
+      <div class="spine-label-wrap">
+        <div class="spine-label">Problem</div>
+        <div class="spine-phrase">Commercialization is the bottleneck.</div>
+      </div>
+    </div>
+    <div class="spine-item" data-target="story-validate">
+      <div class="spine-dot"></div>
+      <div class="spine-label-wrap">
+        <div class="spine-label">Validate</div>
+        <div class="spine-phrase">Build evidence in market.</div>
+      </div>
+    </div>
+    <div class="spine-item" data-target="story-invest">
+      <div class="spine-dot"></div>
+      <div class="spine-label-wrap">
+        <div class="spine-label">Invest</div>
+        <div class="spine-phrase">Capital follows evidence.</div>
+      </div>
+    </div>
+    <div class="spine-item" data-target="story-followon">
+      <div class="spine-dot"></div>
+      <div class="spine-label-wrap">
+        <div class="spine-label">Follow On</div>
+        <div class="spine-phrase">Back continued traction.</div>
+      </div>
+    </div>
+    <div class="spine-item" data-target="story-lpvalue">
+      <div class="spine-dot"></div>
+      <div class="spine-label-wrap">
+        <div class="spine-label">LP Value</div>
+        <div class="spine-phrase">Access earlier. Invest with evidence.</div>
+      </div>
+    </div>
+  </nav>
+
   <!-- ── PAGE HEADER ── -->
-  <div class="page-header">
+  <div class="page-header" id="story-model">
     <p class="page-label">Investment Model</p>
     <h1 class="page-title">A Commercialization Engine.<br />Not a Passive Fund.</h1>
     <p class="page-intro">
@@ -363,35 +491,35 @@
   </section>
 
   <!-- ── THE PROBLEM ── -->
-  <section class="section">
+  <section class="section" id="story-problem">
     <div class="inner">
       <img src="/assets/theproblem.png" alt="UPNY Ventures Problem section showing the translation gap between technical expertise and markets, the timing gap between incubation and Seed investment, and the selection gap between pitch quality and real market evidence." class="platform-works-image" />
     </div>
   </section>
 
   <!-- ── HOW THE PLATFORM WORKS ── -->
-  <section class="section">
+  <section class="section" id="story-validate">
     <div class="inner">
       <img src="/assets/howtheplatformworks.png" alt="UPNY Ventures commercialization and investment selection engine showing 100+ startups evaluated, approximately 30 companies advanced, 5 to 10 companies funded, a $100K follow-on check, and a repeatable cohort pipeline." class="platform-works-image" />
     </div>
   </section>
 
   <!-- ── OUR PLATFORM ── -->
-  <section class="section section-bg">
+  <section class="section section-bg" id="story-invest">
     <div class="inner">
       <img src="/assets/ourplatform.png" alt="UPNY Ventures platform and investment principles showing customer discovery, GTM strategy and execution, pilot development, LOIs and early contracts, investor readiness, selective investment, and evidence-driven capital allocation." class="platform-works-image" />
     </div>
   </section>
 
   <!-- ── WHY INVEST ── -->
-  <section class="section section-bg">
+  <section class="section section-bg" id="story-followon">
     <div class="inner">
       <img src="/assets/whyinvest.png" alt="Why LPs invest with UPNY Ventures, showing Fund I pre-seed commercialization, Fund II Seed and Series A follow-on strategy, and fit for angel investors, family offices, institutional LPs, and strategic partners." class="platform-works-image" />
     </div>
   </section>
 
   <!-- ── INVESTOR CTA ── -->
-  <section class="apply-section">
+  <section class="apply-section" id="story-lpvalue">
     <div class="apply-card">
       <h2 class="apply-title">Investor Inquiries</h2>
       <p class="apply-sub">
@@ -407,6 +535,32 @@
     <span class="footer-copy">© 2026 UPNY Ventures · New York</span>
     <a href="../" class="footer-back">← Back to UPNY.vc</a>
   </footer>
+
+  <script>
+    (function () {
+      var spineItems = Array.prototype.slice.call(document.querySelectorAll('.spine-item'));
+      if (!spineItems.length) return;
+
+      var targets = spineItems.map(function (item) {
+        return { item: item, el: document.getElementById(item.getAttribute('data-target')) };
+      }).filter(function (t) { return t.el; });
+
+      function updateActive() {
+        var focusLine = window.scrollY + window.innerHeight * 0.35;
+        var activeIndex = 0;
+        for (var i = 0; i < targets.length; i++) {
+          if (targets[i].el.offsetTop <= focusLine) activeIndex = i;
+        }
+        targets.forEach(function (t, i) {
+          t.item.classList.toggle('active', i === activeIndex);
+        });
+      }
+
+      window.addEventListener('scroll', updateActive, { passive: true });
+      window.addEventListener('resize', updateActive);
+      updateActive();
+    })();
+  </script>
 
 </body>
 </html>
