@@ -256,77 +256,6 @@
       display: block;
     }
 
-    /* ── Vision Grid ── */
-    .vision-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 48px;
-    }
-
-    .vision-number {
-      font-size: 0.65rem;
-      font-weight: 600;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: #cc9966;
-      margin-bottom: 16px;
-    }
-
-    .vision-title {
-      font-size: 1rem;
-      font-weight: 500;
-      letter-spacing: -0.01em;
-      margin-bottom: 12px;
-    }
-
-    .vision-body {
-      font-size: 0.85rem;
-      font-weight: 300;
-      line-height: 1.8;
-      color: #666666;
-    }
-
-    /* ── LP Types ── */
-    .lp-list {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .lp-item {
-      display: grid;
-      grid-template-columns: 48px 1fr;
-      gap: 32px;
-      padding: 32px 0;
-      border-top: 1px solid #ddd0bb;
-      align-items: start;
-    }
-
-    .lp-item:first-child { border-top: none; }
-    .lp-item:last-child { border-bottom: none; }
-
-    .lp-number {
-      font-size: 0.65rem;
-      font-weight: 600;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: #cc9966;
-      padding-top: 3px;
-    }
-
-    .lp-title {
-      font-size: 1rem;
-      font-weight: 500;
-      letter-spacing: -0.01em;
-      margin-bottom: 8px;
-    }
-
-    .lp-body {
-      font-size: 0.875rem;
-      font-weight: 300;
-      line-height: 1.75;
-      color: #666666;
-    }
-
     /* ── Investor CTA ── */
     .apply-section {
       padding: 48px 40px;
@@ -682,8 +611,6 @@
       .why-item { padding: 28px 0; border-left: none !important; }
       .why-item:nth-last-child(-n+2) { border-bottom: 1px solid #ddd0bb; }
       .why-item:last-child { border-bottom: none; }
-
-      .vision-grid { grid-template-columns: 1fr; gap: 32px; }
     }
 
     @media (max-width: 640px) {
@@ -697,9 +624,6 @@
       .section-intro { font-size: 0.9rem; margin-bottom: 36px; }
 
       .criterion { grid-template-columns: 36px 1fr; gap: 20px; padding: 24px 0; }
-
-      .lp-item { grid-template-columns: 36px 1fr; gap: 20px; padding: 24px 0; }
-      .lp-title { font-size: 0.95rem; }
 
       .apply-section { padding: 40px 24px; }
       .apply-card { padding: 36px 24px; }
@@ -899,68 +823,10 @@
     </div>
   </section>
 
-  <!-- ── LONG-TERM VISION ── -->
+  <!-- ── WHY INVEST ── -->
   <section class="section section-bg">
     <div class="inner">
-      <p class="section-label">Long-Term Vision</p>
-      <p class="section-intro">
-        The commercialization platform creates better companies. The venture funds capture the value created by that platform.
-      </p>
-      <div class="vision-grid">
-
-        <div>
-          <div class="vision-number">Vision 01</div>
-          <div class="vision-title">Venture Creation at Scale</div>
-          <div class="vision-body">Each GTM cohort strengthens our ability to identify, validate, and scale scientific innovation into fundable venture opportunities.</div>
-        </div>
-
-        <div>
-          <div class="vision-number">Vision 02</div>
-          <div class="vision-title">Strengthening the Innovation Pipeline</div>
-          <div class="vision-body">Our model is designed to fill a structural gap in the regional innovation ecosystem in which research reaches commercial markets and attracts institutional capital.</div>
-        </div>
-
-        <div>
-          <div class="vision-number">Vision 03</div>
-          <div class="vision-title">A Replicable Regional Model</div>
-          <div class="vision-body">Fund I focuses on Pre-Seed and early commercialization. Fund II provides follow-on capital through Seed and Series A. Over time, the platform becomes a repeatable engine that consistently transforms university research into commercially valuable companies capable of institutional financing and strategic acquisition.</div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ── WHO INVESTS WITH US ── -->
-  <section class="section">
-    <div class="inner">
-      <p class="section-label">Who Invests With Us</p>
-      <div class="lp-list">
-
-        <div class="lp-item">
-          <div class="lp-number">01</div>
-          <div>
-            <div class="lp-title">Angel Investors</div>
-            <div class="lp-body">Angel Investors seeking structured access to research driven startups are strongly encouraged to invest. 1st-time Angels and seasoned entrepreneurs with strong domain knowledge will benefit through advising and investing in a pool of startups.</div>
-          </div>
-        </div>
-
-        <div class="lp-item">
-          <div class="lp-number">02</div>
-          <div>
-            <div class="lp-title">Family Offices & Institutional LPs</div>
-            <div class="lp-body">Family offices and institutional investors seeking exposure to a structured pre-seed vehicle backed by operational infrastructure and a repeatable selection process. UPNY reduces pre-seed investment risk by deploying capital only after companies have generated real market evidence.</div>
-          </div>
-        </div>
-
-        <div class="lp-item">
-          <div class="lp-number">03</div>
-          <div>
-            <div class="lp-title">State & Economic Development Partners</div>
-            <div class="lp-body">New York State programs and economic development organizations focused on regional economic growth will benefit as partners. UPNY is purpose-built to amplify existing initiatives in innovation.</div>
-          </div>
-        </div>
-
-      </div>
+      <img src="/assets/whyinvest.png" alt="Why LPs invest with UPNY Ventures, showing Fund I pre-seed commercialization, Fund II Seed and Series A follow-on strategy, and fit for angel investors, family offices, institutional LPs, and strategic partners." class="platform-works-image" />
     </div>
   </section>
 
