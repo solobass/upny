@@ -256,84 +256,6 @@
       display: block;
     }
 
-    /* ── Commercialization Infrastructure Grid ── */
-    .infra-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1px;
-      background: #ddd0bb;
-      border: 1px solid #ddd0bb;
-      border-radius: 10px;
-      overflow: hidden;
-    }
-
-    .infra-item {
-      background: #f7f5f2;
-      padding: 32px 28px;
-    }
-
-    .infra-label {
-      font-size: 0.65rem;
-      font-weight: 600;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: #cc9966;
-      margin-bottom: 12px;
-    }
-
-    .infra-title {
-      font-size: 0.95rem;
-      font-weight: 500;
-      letter-spacing: -0.01em;
-      margin-bottom: 8px;
-    }
-
-    .infra-body {
-      font-size: 0.8rem;
-      font-weight: 300;
-      line-height: 1.7;
-      color: #666666;
-    }
-
-    /* ── Strategy (phase layout) ── */
-    .phases {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .phase {
-      display: grid;
-      grid-template-columns: 220px 1fr;
-      gap: 48px;
-      padding: 40px 0;
-      border-top: 1px solid #ddd0bb;
-    }
-
-    .phase:first-child { border-top: none; }
-    .phase:last-child { border-bottom: none; }
-
-    .phase-tag {
-      font-size: 0.65rem;
-      font-weight: 600;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: #cc9966;
-      margin-bottom: 10px;
-    }
-
-    .phase-name {
-      font-size: 1rem;
-      font-weight: 500;
-      letter-spacing: -0.02em;
-    }
-
-    .phase-body {
-      font-size: 0.875rem;
-      font-weight: 300;
-      line-height: 1.85;
-      color: #666666;
-    }
-
     /* ── Vision Grid ── */
     .vision-grid {
       display: grid;
@@ -761,9 +683,7 @@
       .why-item:nth-last-child(-n+2) { border-bottom: 1px solid #ddd0bb; }
       .why-item:last-child { border-bottom: none; }
 
-      .infra-grid { grid-template-columns: repeat(2, 1fr); }
       .vision-grid { grid-template-columns: 1fr; gap: 32px; }
-      .phase { grid-template-columns: 1fr; gap: 12px; }
     }
 
     @media (max-width: 640px) {
@@ -777,7 +697,6 @@
       .section-intro { font-size: 0.9rem; margin-bottom: 36px; }
 
       .criterion { grid-template-columns: 36px 1fr; gap: 20px; padding: 24px 0; }
-      .infra-grid { grid-template-columns: 1fr; }
 
       .lp-item { grid-template-columns: 36px 1fr; gap: 20px; padding: 24px 0; }
       .lp-title { font-size: 0.95rem; }
@@ -973,102 +892,10 @@
     </div>
   </section>
 
-  <!-- ── COMMERCIALIZATION INFRASTRUCTURE ── -->
+  <!-- ── OUR PLATFORM ── -->
   <section class="section section-bg">
     <div class="inner">
-      <p class="section-label">Commercialization Infrastructure</p>
-      <p class="section-intro">
-        UPNY supports every company with the same operational infrastructure we use to evaluate and select investments. Cohorts will learn to recognize signals.
-      </p>
-      <div class="infra-grid">
-
-        <div class="infra-item">
-          <div class="infra-label">System 01</div>
-          <div class="infra-title">Customer Discovery</div>
-          <div class="infra-body">Structured ICP development, market segmentation, and systematic outreach frameworks designed to generate real customer intelligence — not anecdotal feedback from warm contacts.</div>
-        </div>
-
-        <div class="infra-item">
-          <div class="infra-label">System 02</div>
-          <div class="infra-title">GTM Strategy & Execution</div>
-          <div class="infra-body">Full go-to-market planning aligned to technology stage, market vertical, and commercialization timeline — with built-in execution accountability and weekly sprint cadence.</div>
-        </div>
-
-        <div class="infra-item">
-          <div class="infra-label">System 03</div>
-          <div class="infra-title">Pilot Development</div>
-          <div class="infra-body">Design and management of structured customer pilots that generate commercial evidence and create pathways to revenue without premature product commitment or scope overextension.</div>
-        </div>
-
-        <div class="infra-item">
-          <div class="infra-label">System 04</div>
-          <div class="infra-title">Outreach Infrastructure</div>
-          <div class="infra-body">Scalable, multi-channel outreach systems built to operate at the velocity required for meaningful customer development — not ad hoc networking or one-off introductions.</div>
-        </div>
-
-        <div class="infra-item">
-          <div class="infra-label">System 05</div>
-          <div class="infra-title">LOI & Early Contract Facilitation</div>
-          <div class="infra-body">Structured support for converting customer interest into signed commercial agreements — letters of intent, pilot contracts, and early-stage arrangements that constitute genuine market validation.</div>
-        </div>
-
-        <div class="infra-item">
-          <div class="infra-label">System 06</div>
-          <div class="infra-title">Investor Readiness</div>
-          <div class="infra-body">Systematic preparation for downstream fundraising — building the evidence base, narrative, and institutional relationships required to raise a Seed round from qualified investors.</div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ── INVESTMENT STRATEGY ── -->
-  <section class="section">
-    <div class="inner">
-      <p class="section-label">Investment Strategy</p>
-      <div class="phases">
-
-        <div class="phase">
-          <div>
-            <div class="phase-tag">Principle 01</div>
-            <div class="phase-name">Commercialization-First Selection</div>
-          </div>
-          <div class="phase-body">
-            Investment eligibility is earned through performance in the Discovery and Validation programs and UPNY Ventures invests in the companies that best demonstrate commercial traction. The cohort evaluation process is a signal driven deal pipeline.
-          </div>
-        </div>
-
-        <div class="phase">
-          <div>
-            <div class="phase-tag">Principle 02</div>
-            <div class="phase-name">Validation-Driven Capital Allocation</div>
-          </div>
-          <div class="phase-body">
-            Capital follows evidence that validates product-market fit. Companies who produce pilots, letters of intent, beta customers, and early revenue through the GTM Engine are creating signals for a positive investment decision.
-          </div>
-        </div>
-
-        <div class="phase">
-          <div>
-            <div class="phase-tag">Principle 03</div>
-            <div class="phase-name">Selective Deployment</div>
-          </div>
-          <div class="phase-body">
-            The platform is deliberately structured to fund a small number of companies per cohort cycle. Startup customer validation is key to selecting investments.
-          </div>
-        </div>
-
-        <div class="phase">
-          <div>
-            <div class="phase-tag">Principle 04</div>
-            <div class="phase-name">Pre-Seed Stage, Seed-Ready Trajectory</div>
-          </div>
-          <div class="phase-body">
-            We work alongside founders from day one — building the early-customer traction and commercial proof points that lead to additional investment rounds and sustainable growth. UPNY recognizes that some founders pursue venture-scale growth while others focus on building enduring companies.
-          </div>
-        </div>
-
-      </div>
+      <img src="/assets/ourplatform.png" alt="UPNY Ventures platform and investment principles showing customer discovery, GTM strategy and execution, pilot development, LOIs and early contracts, investor readiness, selective investment, and evidence-driven capital allocation." class="platform-works-image" />
     </div>
   </section>
 
