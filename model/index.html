@@ -249,66 +249,11 @@
     }
 
     /* ── Platform Funnel ── */
-    .funnel {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .funnel-step {
-      display: grid;
-      grid-template-columns: 220px 140px 1fr;
-      gap: 48px;
-      padding: 48px 0;
-      border-top: 1px solid #ddd0bb;
-      align-items: start;
-    }
-
-    .funnel-step:first-child { border-top: none; }
-
-    .funnel-tag {
-      font-size: 0.65rem;
-      font-weight: 600;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: #cc9966;
-      margin-bottom: 10px;
-    }
-
-    .funnel-name {
-      font-size: 1.15rem;
-      font-weight: 600;
-      letter-spacing: -0.02em;
-      margin-bottom: 6px;
-    }
-
-    .funnel-sub {
-      font-size: 0.75rem;
-      color: #aaaaaa;
-      line-height: 1.5;
-    }
-
-    .funnel-metric {
-      font-size: clamp(2rem, 3.5vw, 2.8rem);
-      font-weight: 600;
-      color: #cc9966;
-      letter-spacing: -0.04em;
-      line-height: 1;
-      margin-bottom: 6px;
-    }
-
-    .funnel-metric-label {
-      font-size: 0.65rem;
-      font-weight: 500;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: #aaaaaa;
-    }
-
-    .funnel-desc {
-      font-size: 0.875rem;
-      font-weight: 300;
-      line-height: 1.9;
-      color: #555555;
+    .platform-works-image {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      display: block;
     }
 
     /* ── Commercialization Infrastructure Grid ── */
@@ -816,9 +761,6 @@
       .why-item:nth-last-child(-n+2) { border-bottom: 1px solid #ddd0bb; }
       .why-item:last-child { border-bottom: none; }
 
-      .funnel-step { grid-template-columns: 1fr 120px; }
-      .funnel-desc { grid-column: 1 / -1; margin-top: 0; }
-
       .infra-grid { grid-template-columns: repeat(2, 1fr); }
       .vision-grid { grid-template-columns: 1fr; gap: 32px; }
       .phase { grid-template-columns: 1fr; gap: 12px; }
@@ -835,8 +777,6 @@
       .section-intro { font-size: 0.9rem; margin-bottom: 36px; }
 
       .criterion { grid-template-columns: 36px 1fr; gap: 20px; padding: 24px 0; }
-      .funnel-step { grid-template-columns: 1fr; gap: 16px; padding: 36px 0; }
-      .funnel-metric { font-size: 2rem; }
       .infra-grid { grid-template-columns: 1fr; }
 
       .lp-item { grid-template-columns: 36px 1fr; gap: 20px; padding: 24px 0; }
@@ -1029,88 +969,7 @@
   <!-- ── HOW THE PLATFORM WORKS ── -->
   <section class="section">
     <div class="inner">
-      <p class="section-label">How the Platform Works</p>
-      <p class="section-intro">
-        UPNY operates as a commercialization and investment selection engine. Each phase is designed to generate commercial evidence and validate investability.
-      </p>
-      <div class="funnel">
-
-        <div class="funnel-step">
-          <div>
-            <div class="funnel-tag">Phase 1</div>
-            <div class="funnel-name">GTM Strategy Course</div>
-            <div class="funnel-sub">Open to Public</div>
-          </div>
-          <div>
-            <div class="funnel-metric">100+</div>
-            <div class="funnel-metric-label">Startups Evaluated</div>
-          </div>
-          <div class="funnel-desc">
-            Any tech founder can enter the free 2-week GTM Strategy Course. Participants work through the GTM foundation: ideal customer profile, priority verticals, value proposition, and execution workflows. The program generates objective performance data across every participant. Advancement to Phase 2 is earned through demonstrated quality — not assumed.
-          </div>
-        </div>
-
-        <div class="funnel-step">
-          <div>
-            <div class="funnel-tag">Phase 2</div>
-            <div class="funnel-name">100-Day Challenge</div>
-            <div class="funnel-sub">GTM Commercialization Engine</div>
-          </div>
-          <div>
-            <div class="funnel-metric">~30</div>
-            <div class="funnel-metric-label">Companies Advanced</div>
-          </div>
-          <div class="funnel-desc">
-            Top-performing companies from Phase 1 enter the 100-Day Challenge. UPNY deploys its full GTM infrastructure alongside each team — driving customer discovery at scale, developing pilots, pursuing LOIs, and building the commercial relationships and execution systems that produce investable evidence. Founders are scored throughout all 100 days.
-          </div>
-        </div>
-
-        <div class="funnel-step">
-          <div>
-            <div class="funnel-tag">Phase 3</div>
-            <div class="funnel-name">Pre-Seed Investment</div>
-            <div class="funnel-sub">$50–100K · Commercialization-Driven</div>
-          </div>
-          <div>
-            <div class="funnel-metric">5–10</div>
-            <div class="funnel-metric-label">Companies Funded</div>
-          </div>
-          <div class="funnel-desc">
-            Investment decisions are made on the basis of demonstrated commercial traction — not pitch performance or founder pedigree. Only companies that have produced measurable market validation through the platform are eligible. The first institutional check: $50–100K deployed to move from validated interest to early customers and revenue.
-          </div>
-        </div>
-
-        <div class="funnel-step">
-          <div>
-            <div class="funnel-tag">Phase 4</div>
-            <div class="funnel-name">Pre-Seed Follow-on</div>
-            <div class="funnel-sub">$100K · Scaling Capital</div>
-          </div>
-          <div>
-            <div class="funnel-metric">$100K</div>
-            <div class="funnel-metric-label">Follow-on Check</div>
-          </div>
-          <div class="funnel-desc">
-            Companies that deploy Phase 3 capital effectively and continue to demonstrate traction qualify for a $100K follow-on investment. This is the scaling check — capital to build on early wins, expand the customer base, and build the commercial proof points that make a Seed round possible.
-          </div>
-        </div>
-
-        <div class="funnel-step">
-          <div>
-            <div class="funnel-tag">Repeatable Pipeline</div>
-            <div class="funnel-name">Scalable Venture Creation</div>
-            <div class="funnel-sub">Cohort by Cohort</div>
-          </div>
-          <div>
-            <div class="funnel-metric" style="font-size: 1.6rem; letter-spacing: -0.02em; color: #aaaaaa; font-weight: 500;">Ongoing</div>
-            <div class="funnel-metric-label">Per Cohort Cycle</div>
-          </div>
-          <div class="funnel-desc">
-            The four-phase cycle — GTM Strategy Course → 100-Day Challenge → Pre-Seed Investment → Follow-on — repeats across cohorts. Each cycle generates a new set of validated, funded companies while building cumulative platform data, improving sourcing accuracy, selection precision, and commercialization efficiency over time. The result is a scalable engine for converting scientific innovation into investable companies, not a one-time portfolio.
-          </div>
-        </div>
-
-      </div>
+      <img src="/assets/howtheplatformworks.png" alt="UPNY Ventures commercialization and investment selection engine showing 100+ startups evaluated, approximately 30 companies advanced, 5 to 10 companies funded, a $100K follow-on check, and a repeatable cohort pipeline." class="platform-works-image" />
     </div>
   </section>
 
