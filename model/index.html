@@ -165,47 +165,6 @@
       margin-bottom: 56px;
     }
 
-    /* ── Criteria (numbered list) ── */
-    .criteria {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .criterion {
-      display: grid;
-      grid-template-columns: 48px 1fr;
-      gap: 32px;
-      padding: 32px 0;
-      border-top: 1px solid #ddd0bb;
-      align-items: start;
-    }
-
-    .criterion:first-child { border-top: none; }
-    .criterion:last-child { border-bottom: none; }
-
-    .criterion-number {
-      font-size: 0.65rem;
-      font-weight: 600;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: #cc9966;
-      padding-top: 3px;
-    }
-
-    .criterion-title {
-      font-size: 1rem;
-      font-weight: 500;
-      letter-spacing: -0.01em;
-      margin-bottom: 8px;
-    }
-
-    .criterion-body {
-      font-size: 0.875rem;
-      font-weight: 300;
-      line-height: 1.75;
-      color: #666666;
-    }
-
     /* ── Why Now Grid ── */
     .why-grid {
       display: grid;
@@ -366,8 +325,6 @@
       .section-label { margin-bottom: 28px; }
       .section-intro { font-size: 0.9rem; margin-bottom: 36px; }
 
-      .criterion { grid-template-columns: 36px 1fr; gap: 20px; padding: 24px 0; }
-
       .apply-section { padding: 40px 24px; }
       .apply-card { padding: 36px 24px; }
       .apply-sub { font-size: 0.875rem; }
@@ -406,40 +363,10 @@
     </div>
   </section>
 
-  <!-- ── THE GAP ── -->
-  <section class="section section-bg" style="border-top: none;">
+  <!-- ── THE PROBLEM ── -->
+  <section class="section">
     <div class="inner">
-      <p class="section-label">The Problem</p>
-      <p class="section-intro">
-        Universities excel at creating breakthrough technologies. Incubators help founders form companies. But the gap between incubation and institutional investment is where most university technologies fail to reach commercial scale. The bottleneck isn't the science — it's the go-to-market. A 'solution in search of a problem' must become 'a customer seeking a solution.'
-      </p>
-      <div class="criteria">
-
-        <div class="criterion">
-          <div class="criterion-number">01</div>
-          <div>
-            <div class="criterion-title">The Translation Gap</div>
-            <div class="criterion-body">PhD researchers, scientists, and engineers emerge from years of technical development with minimal exposure to commercial markets, customer discovery, or sales infrastructure. The skills required to build breakthrough technology differ fundamentally from those required to generate revenue. UPNY's commercialization platform is built specifically to bridge that gap.</div>
-          </div>
-        </div>
-
-        <div class="criterion">
-          <div class="criterion-number">02</div>
-          <div>
-            <div class="criterion-title">The Timing Gap</div>
-            <div class="criterion-body">Traditional venture capital is structured for companies that have already demonstrated commercial traction. The space between incubator and Seed round is where we make an impact. It's where early-customer traction is built and where the most meaningful returns begin.</div>
-          </div>
-        </div>
-
-        <div class="criterion">
-          <div class="criterion-number">03</div>
-          <div>
-            <div class="criterion-title">The Selection Gap</div>
-            <div class="criterion-body">Most early-stage venture selection is built around founder storytelling and pitch quality — not market evidence. Tech founders are scientists and engineers, not salespeople. We work alongside founders to find market-fit and validate demand with early customers.</div>
-          </div>
-        </div>
-
-      </div>
+      <img src="/assets/theproblem.png" alt="UPNY Ventures Problem section showing the translation gap between technical expertise and markets, the timing gap between incubation and Seed investment, and the selection gap between pitch quality and real market evidence." class="platform-works-image" />
     </div>
   </section>
 
