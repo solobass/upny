@@ -91,6 +91,28 @@
 
     .nav-back:hover { color: #111111; }
 
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .nav-login {
+      display: inline-block;
+      background: #111111;
+      color: #ffffff;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 12px 22px;
+      border-radius: 6px;
+      transition: background 0.2s;
+    }
+
+    .nav-login:hover { background: #cc9966; color: #111111; }
+
     /* ── Shared founder-journey section ── */
     .founder-section {
       padding: 64px 40px;
@@ -319,7 +341,10 @@
         <img src="../assets/upny_navlogo.png" alt="UPNY Ventures" />
       </a>
     </div>
-    <a href="../" class="nav-back">← Back to UPNY.vc</a>
+    <div class="nav-actions">
+      <a href="../" class="nav-back">← Back to UPNY.vc</a>
+      <a href="https://apply.upny.vc/login" class="nav-login">Founder Login →</a>
+    </div>
   </nav>
 
   <!-- ── SECTION 1: FOUNDER JOIN / HERO ── -->
