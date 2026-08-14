@@ -1,6 +1,7 @@
 {
   "redirects": [
+    { "source": "/apply", "destination": "https://apply.upny.vc/login", "permanent": false },
     { "source": "/gtmengine", "destination": "https://apply.upny.vc/login", "permanent": false },
-    { "source": "/partner", "destination": "https://apply.upny.vc/investor", "permanent": false }
+    { "source": "/partner", "destination": "https://apply.upny.vc/partner", "permanent": false }
   ]
 }
