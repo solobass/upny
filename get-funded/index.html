@@ -199,8 +199,12 @@
       text-decoration: none;
       padding: 18px 36px;
       border-radius: 4px;
-      cursor: default;
-      user-select: none;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .closing-badge:hover {
+      background: #ddd0bb;
     }
 
     .closing-meta {
@@ -370,7 +374,7 @@
           Could <span class="gold">Change What's Next.</span>
         </h2>
         <p class="closing-body">The next step is proving where the market pulls.</p>
-        <span class="closing-badge">Coming Soon</span>
+        <a href="/apply" class="closing-badge">Apply for the GTM Engine</a>
         <p class="closing-meta">Targeted Commercialization Engine Launch&nbsp;&nbsp;•&nbsp;&nbsp;Spring 2027</p>
       </div>
     </div>
