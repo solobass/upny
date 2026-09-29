@@ -10,13 +10,13 @@ UPNY Ventures is NOT a traditional passive venture fund. It is a commercializati
 
 - Runs structured GTM cohorts for 100+ deep-tech startups per cycle
 - Validates the most promising companies through a 12-week active commercialization program
-- Invests pre-seed capital (Fund I: $5M target) in the 5–10 companies per cohort that demonstrate the strongest commercial evidence
+- Invests pre-seed capital (Fund I: $3M target) in the 5–10 companies per cohort that demonstrate the strongest commercial evidence
 - Embeds UPNY Angels as active co-builders and advisors inside portfolio companies
 
 ## Fund Overview
 
 - **Fund Name:** UPNY Ventures Fund I
-- **Fund Size:** $5M target
+- **Fund Size:** $3M target
 - **Stage:** Pre-Seed (before customers, before revenue)
 - **Geography:** New York State (NYS universities, incubators, accelerators)
 - **Focus:** Deep Technology — defensible, product-based companies
